@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="icon" href="../../img/logos/favicon1.ico">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <title>Account</title>
+</head>
+<body>
+    <header>
+        <section class="headerAccount">
+            <div class="container">
+                <h1><span class="sr-only">Cuisine cookbooks and more</span></h1>
+                <nav>
+                    <!-- mobile menu -->
+                    <label for="showMenu" id="showMenuLabel"></label>
+                    <input type="checkbox" id="showMenu" role="button" aria-pressed="true">
+                    <ul class="list">
+                        <li><a href="../../index.html">home</a></li>
+                        <li><a href="../campagne/nigella.html">campagne</a></li>
+                        <li><a href="../recepten/recepten.html">recepten</a></li>
+                        <li><a href="../nieuws/nieuws.html">nieuws</a></li>
+                        <li><a href="../over_ons/over_ons.html">over ons</a></li>
+                        <li><a href="../contact/contact.html">contact</a></li>
+                        <li><a href="../shop/winkelwagen.html">winkelwagen</a></li>
+                        <li><a href="../shop/shop.html">shop</a></li>
+                    </ul>
+                    <div class="accountIcons">
+                        <a class="accountActive" href="">account</a>
+                        <span></span>
+                        <a class="winkelwagen" href="../shop/winkelwagen.html">winkelwagen</a>
+                    </div>
+                    <div class="logo" title="Home">
+                        <div class="logo1"><img src="../../img/logos/logo_zonder_tekst.svg" alt="logo"></div>
+                        <div class="logo2"><a href="../../index.html"><img src="../../img/logos/logo_tekst.svg"
+                                    alt="logo" title="Home"></a></div>
+                    </div>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <main class="account">
+        <h2>account</h2>
+        <!-- dropdown menu wordt verborgen in tablet en desktop media query -->
+        <div class="accountMenus">
+            <div class="dropdown" id="drpdAccount">
+                <!-- Checkbox als toggle -->
+                <input type="checkbox" id="dropdownToggle3">
+                <!-- Label fungeert als knop voor de dropdown in mobile -->
+                <label for="dropdownToggle3"><a class="active" href="">Persoonlijke gegevens <i class="fa-solid fa-angle-down"></i></a></label>
+                <!-- Dropdown menu -->
+                <div class="menu">
+                    <a href="">Bestellingen</a>
+                    <a href="">Cadeaubonnen</a>
+                    <a href="">Verlanglijst</a>
+                </div>
+            </div>
+            <div class="menuVast">
+                <ul class="list">
+                    <li><a class="active" href="">Persoonlijke gegevens</a></li>
+                    <li><a href="">Bestellingen</a></li>
+                    <li><a href="">Cadeaubonnen</a></li>
+                    <li><a href="">Verlanglijst</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="yesJS">This page requires JavaScript to function</div>
+        <div id="formholder" class="noJS">
+            <!-- start formulier -->
+            <!-- form action="scripts/mailform.php" method="post"--> <!--gebruik ik in de Live versie -->
+            <form action="#" method="get"><!-- gebruik ik nu in de test fase -->
+                <fieldset class="persoonlijk">
+                    <legend>persoonlijke gegevens</legend>
+                    <div class="aanhef">
+                        <span class="aanhefLabel">Aanhef*:</span>
+                        <div class="heer">
+                            <input type="radio" name="aanhef" id="heer">
+                            <label for="heer">De heer</label>
+                        </div>
+                        <div class="mevr">
+                            <input type="radio" name="aanhef" id="mevrouw">
+                            <label for="mevrouw">Mevrouw</label>
+                        </div>
+                    </div>
+                    <div class="voornaam">
+                        <label for="voornaam">Voornaam*:</label>
+                        <input class="veld" type="text" name="voornaam" id="voornaam" placeholder="voornaam">
+                    </div>
+                    <div class="tussen">
+                        <label for="tussenvoegsel">Tussenvoegsel:</label>
+                        <input class="veld" type="text" name="tussenvoegsel" id="tussenvoegsel"
+                            placeholder="tussenvoegsel">
+                    </div>
+                    <div class="achternaam">
+                        <label for="achternaam">Achternaam*:</label>
+                        <input class="veld" type="text" name="achternaam" id="achternaam"
+                        placeholder="achternaam">  
+                    </div>
+                    <div class="bedrijf">
+                        <label for="bedrijfsnaam">Bedrijfsnaam:</label>
+                        <input class="veld" type="text" name="bedrijfsnaam" id="bedrijfsnaam"
+                            placeholder="bedrijfsnaam">
+                    </div>
+                    <div class="geboorte">
+                        <label for="geboortedatum">Geboortedatum:</label>
+                        <input class="veld" type="text" name="geboortedatum" id="geboortedatum" readonly="readonly"
+                        placeholder="vanaf 18 jaar"><!-- Inputveld voor de datepicker -->
+                    </div>
+                    <div class="straat">
+                        <label for="straat">Straat*:</label>
+                        <input class="veld" type="text" name="straat" id="straat" placeholder="straat">
+                    </div>
+                    <div class="huisnr">
+                        <label for="huisnummer">Huisnummer*:</label>
+                        <input class="veld" type="text" name="huisnummer" id="huisnummer" placeholder="01">
+                    </div>
+                    <div class="postcode">
+                        <label for="postcode">Postcode*:</label>
+                        <input class="veld" type="text" name="postcode" id="postcode" placeholder="AB1111">
+                    </div>
+                    <div class="landRadios">
+                        <div class="nederland">
+                            <input class="radio" type="radio" name="land" id="nederland" value="nederland">
+                            <label for="nederland"> Nederland*</label>
+                        </div>
+                        <div class="anders">
+                            <input class="radio" type="radio" name="land" id="anders" value="anders">
+                            <label for="anders"> Anders:</label>
+                        </div>
+                    </div>
+                    <div class="landAnders">
+                        <input class="veld" type="text" name="land" id="land_anders">
+                    </div>      
+                    <div class="telefoon">
+                        <label for="tel">Telefoon:</label>
+                        <input class="veld" type="text" name="tel" id="tel">
+                    </div>   
+                </fieldset>
+                <fieldset class="inloggen">
+                    <legend>inloggegevens</legend>
+                    <div class="email">
+                        <label for="email_inlog">Email:</label>
+                        <input class="veld" type="text" name="email_inlog" id="email_inlog"
+                            placeholder="email"><span id="email_inlog_error" class="error"></span>
+                    </div>
+                    <div class="bevestigen">
+                        <label for="bevestigen">Email bevestigen:</label>
+                        <input class="veld" type="text" name="bevestigen" id="bevestigen"
+                            placeholder="email"><span id="bevestigen_error" class="error"></span>
+                    </div>
+                    <div class="wachtwoord">
+                        <div>
+                            <label for="wachtwoord">Huidig wachtwoord:</label>
+                            <input class="veld" type="password" name="wachtwoord" id="wachtwoord"
+                                placeholder="Voer uw wachtwoord in">
+                        </div> 
+                    </div>
+                    <input class="wwButton" type="button" name="wachtwoord" id="ww_wijzigen" value="Wachtwoord wijzigen">
+                </fieldset>
+            </form>
+        </div>
+    </main>
+    <!-- start footer -->
+    <footer>
+        <div class="footerIcons">
+            <a href="../../index.html"><img src="../../img/logos/logo_complete.svg" alt="logo"></a>
+            <div>
+                <ul id=footerSocMed>
+                    <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class=lowerHalf>
+            <div class=footerNav>
+                <ul>
+                    <li><a href="../campagne/nigella.html">campagne</a></li>
+                    <li><a href="../recepten/recepten.html">recepten</a></li>
+                    <li><a href="../nieuws/nieuws.html">nieuws</a></li>
+                    <li><a href="">over Cuisine</a></li>
+                    <li><a href="../over_ons/over_ons.html">contact</a></li>
+                    <li><a href="../shop/shop.html">shop</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <address>
+                    <ul class="footerContactUs">
+                        <li>Cuisine B.V.</li>
+                        <li>Egelenburg 150-152</li>
+                        <li>1081 GK | Amsterdam</li>
+                    </ul>
+                </address>
+            </div>
+        </div>
+        <p>Cuisine B.V. &copy;2024</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="../../js/main.js"></script>
+</body>
+
+</html>

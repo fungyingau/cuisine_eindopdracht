@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="icon" href="../../img/logos/favicon1.ico">
+    <title>Welk deel van de koe</title>
+</head>
+<body>
+    <header>
+        <section class="heroKoe">
+            <div class="container">
+                <h1><span class="sr-only">Cuisine cookbooks and more</span></h1>
+                <nav>
+                    <!-- mobile menu -->
+                    <label for="showMenu" id="showMenuLabel"></label>
+                    <input type="checkbox" id="showMenu" role="button" aria-pressed="true">
+                    <ul class="list">
+                        <li><a href="../../index.html">home</a></li>
+                        <li><a href="../campagne/nigella.html">campagne</a></li>
+                        <li><a href="../recepten/recepten.html">recepten</a></li>
+                        <li class="active"><a href="../nieuws/nieuws.html">nieuws</a></li>
+                        <li><a href="../over_ons/over_ons.html">over ons</a></li>
+                        <li><a href="../contact/contact.html">contact</a></li>
+                        <li><a href="../shop/winkelwagen.html">winkelwagen</a></li>
+                        <li><a href="../shop/shop.html">shop</a></li>
+                    </ul>
+                    <div class="accountIcons">
+                        <a class="account" href="../shop/account.html">account</a>
+                        <span></span>
+                        <a class="winkelwagen" href="../shop/winkelwagen.html">winkelwagen</a>
+                    </div>
+                    <div class="logo" title="Home">
+                        <div class="logo1"><img src="../../img/logos/logo_zonder_tekst.svg" alt="logo"></div>
+                        <div class="logo2"><a href="../../index.html"><img src="../../img/logos/logo_tekst.svg" alt="logo" title="Home"></a></div>
+                    </div>
+                </nav>    
+            <div class="container">
+                <h2>Welk deel van de koe?</h2>
+            </div>
+            <!-- animatie -->
+            <div id="animation_container" style="background-color:rgba(102, 102, 102, 0.00); width:850px; height:500px">
+                <canvas id="canvas" width="850" height="500" style="position: absolute; display: block; background-color:rgba(102, 102, 102, 0.00);"></canvas>
+                <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:850px; height:500px; position: absolute; left: 0px; top: 0px; display: block;">
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <!-- deel van de koe -->
+        <section class="koe" id="koe">    
+            <h3>Welk deel van de koe?</h3>
+            <div class="ontdekImg">
+                <img class="koeDelen" src="../../img/nieuws/koe_kleur.svg" alt="koe" usemap="#image-map">
+                <map name="image-map">
+                    <area class="popupLink" target="_blank" alt="biefstuk" title="biefstuk" href="#" coords="197,104,109,104,81,117,73,188,91,267,183,265,198,244,196,191,130,197,115,182,116,155,131,142,196,148" shape="poly" data-popup="popup1">
+                    <area class="popupLink" target="_blank" alt="ossenhaas" title="ossenhaas" href="#" coords="133,201,282,183,283,157,131,141,114,151,114,186" shape="poly" data-popup="popup2">
+                    <area class="popupLink" target="_blank" alt="entrecote" title="entrecote" href="#" coords="210,106,302,121,403,128,434,121,436,185,414,200,232,197,218,190,283,182,283,156,210,150" shape="poly" data-popup="popup3">
+                    <area class="popupLink" target="_blank" alt="sukade" title="sukade" href="#" coords="591,249,468,247,453,265,454,364,521,364,566,326" shape="poly" data-popup="popup4">
+                    <area target="_blank" alt="sukde2" title="sukde2" href="#" coords="658,162,61" shape="circle">
+                </map>
+            </div>
+            <div class="ontdekText1">
+                <p>Selecteer een deel van de koe en ontdek hier wat de vier meest gewaardeerde delen van de koe zijn.</p>     
+            </div>
+            <div class="ontdekText2">
+                <p>Rundvlees is de verzamelnaam van het vlees dat afkomstig is van de koe, stier of de os. De smaak en textuur van het vlees zijn afhankelijk van meerdere factoren. Zo speelt de ras, de gezondheid, de leeftijd en de voeding van het rund een rol in de uiteindelijke kwaliteit van het vlees.</p><p>Een rund kent veel voedzame vleesdelen met talloze culinaire mogelijkheden: grillen, koken, stoven of bakken. En zelfs rauw kan rundvlees worden gegeten, denk bijvoorbeeld aan gerechten als steak tartare en carpaccio.</p>
+                <p>Rundvlees is een rood sappig vleessoort. Onbewerkt mager rundvlees past in een gezond voedingspatroon. Van de vleessoorten is rundvlees relatief rijk aan vitamine B12 en ijzer.</p>            
+            </div>
+                       
+        </section>
+        <article id="popupContent" class="dynamicPopup">   
+        </article> 
+    </main>
+    <!-- start footer -->
+    <footer>
+        <div class="footerIcons">
+            <div>
+                <a href="../../index.html"><img src="../../img/logos/logo_complete.svg" alt="logo"></a>
+            </div>
+            <div>
+                <ul id=footerSocMed>
+                    <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class=lowerHalf>
+            <div class=footerNav>
+                <ul>
+                    <li><a href="../campagne/nigella.html">campagne</a></li>
+                    <li><a href="../recepten/recepten.html">recepten</a></li>
+                    <li><a href="nieuws/">nieuws</a></li>
+                    <li><a href="overons/">over Cuisine</a></li>
+                    <li><a href="contact/">contact</a></li>
+                    <li><a href="shop/">shop</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <address>
+                    <ul class="footerContactUs">
+                        <li>Cuisine B.V.</li>
+                        <li>Egelenburg 150-152</li>
+                        <li>1081 GK | Amsterdam</li>
+                    </ul>
+                </address>
+            </div>
+        </div>
+        <p>Cuisine B.V. &copy;2024</p>
+    </footer>
+    <div id="overlay"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+<script src="../../js/rook.js"></script>
+<script src="../../js/koe_database.js"></script>
+<script src="../../js/imageMapResizer.js"></script>
+<script src="../../js/main.js"></script>
+</body>
+</html>

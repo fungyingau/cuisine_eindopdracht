@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="icon" href="../../img/logos/favicon1.ico">
+    <title>Cuisine Shop</title>
+</head>
+<body>
+    <header>
+        <section class="heroShop">
+            <div class="container">
+                <h1><span class="sr-only">Cuisine cookbooks and more</span></h1>
+                <nav>
+                    <!-- mobile menu -->
+                    <label for="showMenu" id="showMenuLabel"></label>
+                    <input type="checkbox" id="showMenu" role="button" aria-pressed="true">
+                    <ul class="list">
+                        <li><a href="../../index.html">home</a></li>
+                        <li><a href="../campagne/nigella.html">campagne</a></li>
+                        <li><a href="../recepten/recepten.html">recepten</a></li>
+                        <li><a href="../nieuws/nieuws.html">nieuws</a></li>
+                        <li><a href="../over_ons/over_ons.html">over ons</a></li>
+                        <li><a href="../contact/contact.html">contact</a></li>
+                        <li><a href="../shop/winkelwagen.html">winkelwagen</a></li>
+                        <li class="active"><a href="">shop</a></li>
+                    </ul>
+                    <div class="accountIcons">
+                        <a class="account" href="../shop/account.html">account</a>
+                        <span></span>
+                        <a class="winkelwagen" href="../shop/winkelwagen.html">winkelwagen</a>
+                    </div>
+                    <div class="logo" title="Home">
+                        <div class="logo1"><img src="../../img/logos/logo_zonder_tekst.svg" alt="logo"></div>
+                        <div class="logo2"><a href="../../index.html"><img src="../../img/logos/logo_tekst.svg" alt="logo" title="Home"></a></div>
+                    </div>
+                </nav>
+            </div>
+            <div class="container">
+                <h2>Elke week de nieuwste boeken</h2>
+                <div class="slider">
+                    <div class="prev"></div>
+                    <div class="blueLine"></div>
+                    <div class="next"></div>
+                </div>
+                <h3>Laat je inspireren!</h3>
+                <a href="boek.html" class="button">Boek van de week</a>
+                <div class="pager" id="bullets">
+                    <span class="active"></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="shop">
+        <!-- Nieuwste boeken -->
+        <section id="uitgelicht">
+            <h2>Boeken</h2>
+            <div class="container">
+                <hr class="line">
+                <a href="boek.html" class="cardUitgelicht">
+                    <article class="uitgelicht" id="uit1">
+                        <h3>Simply Nigella</h3>
+                        <div class="textUit">
+                            <p>In Simply Nigella brengt Nigella Lawson het oprechte plezier en kalme comfort terug in onze keuken. Het bevat 125 inspirerende en toegankelijke recepten die moeiteloos in ons drukke leven passen, boordevol ingrediënten waar zowel je lichaam als je geest gelukkig van wordt.</p>
+                        </div>
+                        <div class="imgBoek" id="uit1Img"></div>
+                        <span class="button">simply nigella</span>
+                        <p class="boekprijs">Prijs: <span class="prijs"> €34,95</span></p>
+                    </article>
+                </a>
+                <a href="boek2.html" class="cardUitgelicht">
+                    <article class="uitgelicht" id="uit2"> 
+                        <h3>Sweet</h3>
+                        <div class="textUit">
+                            <p>In Sweet keert Yotam Ottolenghi terug naar waar zijn culinaire avonturen ooit begonnen: in de patisserie. Volmaakt luchtig biscuitgebak, op smaak gebracht met kruiden en citrus, een met poedersuiker bestoven, superkruimelig koekje rechtstreeks uit de oven ...</p>
+                        </div>
+                        <div class="imgBoek" id="uit2Img"></div>
+                        <span class="button">sweet</span>
+                        <p class="boekprijs">Prijs: <span class="prijs"> €22,99</span></p>
+                    </article>
+                </a>
+                <a href="boek3.html" class="cardUitgelicht">
+                    <article class="uitgelicht" id="uit3">             
+                        <h3>Jamie's Family Super Food</h3>
+                        <div class="textUit">
+                            <p>Jamie Olivers nieuwe boek Super food voor familie en vrienden is zijn 18e kookboek! Na het succes van Jamie's super food voor elke dag komt Jamie Oliver met een vervolg, een kookboek vol superfood-recepten voor het hele gezin.</p>
+                        </div>
+                        <div class="imgBoek" id="uit3Img"></div>
+                        <span class="button">Super food voor...</span>
+                        <p class="boekprijs">Prijs: <span class="prijs"> €34,95</span></p>               
+                    </article>
+                </a>  
+            </div>
+        </section>
+        <!-- dropdown menu's & rangeslider -->
+        <div class="menus">
+            <div class="dropdown" id="drpdCat">
+                <!-- Checkbox als toggle -->
+                <input type="checkbox" id="dropdownToggle1">           
+                <!-- Label fungeert als knop voor de dropdown -->
+                <label for="dropdownToggle1">Categorie <i class="fa-solid fa-angle-down"></i></label>
+                <!-- Dropdown menu -->
+                <div class="menu">
+                    <a href="">Vlees</a>
+                    <a href="">Vis</a>
+                    <a href="">Vegetarisch</a>
+                    <a href="">Engelstalig</a>
+                    <a href="">Nederlands</a>
+                </div>
+            </div>
+            <div class="dropdown" id="drpdKeuk">
+                <!-- Checkbox als toggle -->
+                <input type="checkbox" id="dropdownToggle2">           
+                <!-- Label fungeert als knop voor de dropdown -->
+                <label for="dropdownToggle2">Keuken <i class="fa-solid fa-angle-down"></i></label>
+                <!-- Dropdown menu -->
+                <div class="menu">
+                    <a href="">Aziatisch</a>
+                    <a href="">Frans</a>
+                    <a href="">Zuid-Amserikaans</a>
+                    <a href="">Italiaans</a>
+                    <a href="">Midden oosten</a>
+                </div>
+            </div>
+            <div class="rangeContainer">
+                <span id="minValue">€</span>
+                <input type="range" min="10" max="100" value="35" class="rangeSlider" id="myRange">
+                <span id="maxValue">€€€</span>
+                <p>prijs: €<span id="aantal"></span></p>
+            </div>
+        </div>
+        <div class="yesJS">This page requires JavaScript to function!</div>
+        <div class="boekthumbs" id="dynamicBoeken" class="noJS">    
+        </div>
+        <!-- dynamisch deel -->
+        <div class="pagination">
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-arrow-left"></i></a></li> 
+                <li class="active"><a href="#1">1</a></li>
+                <li><a href="#2">2</a></li>
+                <li><a href="#3">3</a></li>
+                <li><a href="#4">4</a></li>
+                <li><a href="#5">5</a></li>
+                <li><a href="#"><i class="fa-solid fa-arrow-right"></i></a></li>
+              </ul>
+        </div>      
+    </main>
+    <!-- start footer -->
+    <footer>
+        <div class="footerIcons">
+            <a href="../../index.html"><img src="../../img/logos/logo_complete.svg" alt="logo"></a>
+            <div>
+                <ul id=footerSocMed>
+                    <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class=lowerHalf>
+            <div class=footerNav>
+                <ul>
+                    <li><a href="">campagne</a></li>
+                    <li><a href="../recepten/recepten.html">recepten</a></li>
+                    <li><a href="../nieuws/nieuws.html">nieuws</a></li>
+                    <li><a href="">over Cuisine</a></li>
+                    <li><a href="../over_ons/over_ons.html">contact</a></li>
+                    <li><a href="">shop</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <address>
+                    <ul class="footerContactUs">
+                        <li>Cuisine B.V.</li>
+                        <li>Egelenburg 150-152</li>
+                        <li>1081 GK | Amsterdam</li>
+                    </ul>
+                </address>
+            </div>
+        </div>
+        <p>Cuisine B.V. &copy;2024</p>
+    </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="../../js/boeken-database.js"></script>
+<script src="../../js/main.js"></script>
+</body>
+</html>

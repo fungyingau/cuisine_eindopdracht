@@ -1,0 +1,4139 @@
+@import url(modern-reset.css);
+/* fontAwesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+/* Raleway */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/* Merriweather */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap');
+/* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* jQuery UI */
+@import url('https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css');
+
+/* ==================== start default styles ==================== */
+html {
+	font-size: 100%;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	background-color: #FFFFFF;
+	position: relative;
+    margin: 0;
+    font-size: 1rem;
+}
+
+p {
+	margin: 0 0 0.6em 0;
+    font-weight: 600;
+}
+
+ul[class='list'],
+ol[class='list'] {
+  padding: 0;
+  margin: 0;
+}
+
+section.heroHome, section.heroRecept1, section.heroRecept2, section.heroRecept3, section.heroRecept4, section.heroRecept5, section.heroRecept6, section.heroRecept7, section.heroRecept8, section.heroRecept9, section.heroRecept10, section.heroOver {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+}
+
+section.heroShop {
+    height: 90vh;
+    transition: background-image 0.8s ease;
+}
+
+section.heroHome {
+    background-image: url(../img/hero/hero_home1.jpg);
+    height: 100%;
+    transition: background-image 0.8s ease;
+}
+
+.heroHome > .container:nth-child(2) {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroCampagne > .container:nth-child(2)  {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+section.heroCampagne {
+    background-image: url(../img/hero/hero_nigella.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    height: 80%;
+}
+
+section.heroRecept1 {
+    background-repeat: no-repeat;
+    background-position: 75% 50%;
+    background-size:cover;     
+}
+
+section.heroKoe {
+    background-image: url(../img/hero/hero_koe.jpg);
+    background-position: 64% 68%;
+    background-size: 110%;
+    background-repeat: no-repeat;
+}
+
+section.heroSushi {
+    background: url(../img/hero/hero_sushi.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 60%;
+    background-size: cover;
+    height: 60vh;
+}
+
+section.heroOver {
+    background: url(../img/hero/hero_over.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section.heroShop {
+    background: url(../img/hero/hero_shop1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 43% 58%;
+}
+
+.sr-only {
+	border: 0 !important;
+	clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
+	-webkit-clip-path: inset(50%) !important;
+		clip-path: inset(50%) !important;  /* 2 */
+	height: 1px !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	position: absolute !important;
+	width: 1px !important;
+	white-space: nowrap !important;   /* 3 */
+}
+
+h1 {
+    font-size: 0em;
+}
+
+h2 {
+   font-family: 'Merriweather', serif;
+   font-style: italic;
+   font-weight: 700;
+   font-size: 1.25em;
+   color: #FFF;
+   text-align: center;
+   margin-bottom: 0.7em;
+   text-shadow: 1px 1px 3px black;
+}
+ 
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.6em;
+    color: #FFF;
+    margin-top: 0.7em;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+ }
+
+ a {
+    text-decoration: none;
+ }
+
+/* blue line */
+.blueLine {
+    width: 16em;
+	height: 4px;
+	background-color:#418c9f;
+	margin: auto;
+    position: relative;
+}
+
+.slider {
+    width: 98vw;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 4em;
+    align-content: center;
+    margin: auto;
+}
+
+.prev, .next {
+    width: 3.2em;
+    position: relative;
+    background-size: 995px 71px;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: 600ms;
+}
+
+.prev:hover, .next:hover {
+    opacity: 0.9;
+}
+
+.prev {
+    background-image: url("../img/logos/Common-Icons-white-gold.svg");
+    background-repeat: no-repeat;
+    background-position: -655px -4px;
+}
+
+.next {
+    background-image: url("../img/logos/Common-Icons-white-gold.svg");
+    background-position: -758px -4px;
+}
+
+.button:active {
+    background-color: #418c9f;
+}
+
+/* ======================================================= */
+/* ==================== Mobile Styles ==================== */
+/* ======================================================= */
+.logo {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+}
+
+.logo1 {
+    margin: 0 auto 1em auto;
+    width: 8.75em;
+    width: 6em;
+    border-radius: 50%;
+    cursor: pointer;  
+}
+
+.logo2 {
+    width: 8.75em;
+    width: 6em;
+    border-radius: 50%;
+    top: 100px;
+    margin: -7em auto 1em auto;
+    border-radius: 50%;
+    cursor: pointer; 
+}
+
+nav {
+    display: grid;
+    width: 100%;
+    background-color: rgba(0,0,0, 0.75);
+    height:62px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10vh 1fr;
+    row-gap: 1em;
+}
+
+nav ul{
+    position:absolute;
+    width:100vw;
+    background-color: rgba(0,0,0, 0.75);
+    height:0;
+    overflow:hidden;
+    transition:height 0.8s ease-out;
+    
+}
+
+nav ul li:first-of-type {
+    border-top: solid 0.01em black;
+}
+
+nav ul li{
+    display:block;
+    width:100%;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    border-bottom: solid 0.01em black;
+    font-weight: 600;
+    font-size: 1.1em; 
+    text-transform: uppercase;  
+    cursor: pointer;
+}
+
+nav ul li a {
+    padding: 1em;
+}
+
+#showMenu {
+    cursor: pointer;
+    position: absolute;
+    top: 9px;
+    left: 0.5em;
+    font-size: 2em;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor:pointer;
+}
+
+#showMenu::after {
+    display: block;
+    font-size: 0.8em;
+    content: "\2630";
+    color: #fff;
+}
+
+/* hamburgermenu na het uitklappen menu */
+#showMenu:checked::after {
+    content: "\1f7a9"; /* Unicode voor het kruis */
+    color: #fff;
+}
+
+#showMenu:checked + ul {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    top: 62px;
+}
+
+#showMenu:checked + ul.list {
+    z-index: 10;
+    height: 500px;
+}
+
+#showMenu:checked + ul li {
+    color: #FFF;
+    font-weight: 700;
+    padding-left: 1.5em;
+}
+
+#showMenu:checked + ul li a {
+    text-align: left;
+}
+
+#showMenu:checked + ul li.active {
+    color:#d98a3f;
+}
+
+.accountIcons {
+    grid-column: 3/4;
+    align-items: center;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgba(0, 0, 0, 0);
+    right: 2em;
+    top: 5px;
+}
+
+.accountIcons a {
+    width: 38px;
+    height: 38px;
+    border-radius: 19px;
+    background-image: url("../img/logos/Common-Icons-white-gold.svg");
+    background-repeat: no-repeat;
+    background-size: 349px 30px;
+    font-size: 0;
+}
+
+.accountIcons span{
+    margin-left: 0.6em;
+    color: transparent;
+}
+
+.accountIcons a.account{
+    background-position: 7px 2px;
+}
+
+.accountIcons a.accountActive, .accountIcons a.account:hover {
+    background-position: 7px 2px;
+    background-color: #d98a3f;
+    transition: 0.5s;
+}
+
+.accountIcons a.winkelwagen{
+    background-position: -24px 3px;  
+}
+
+.accountIcons a.winkelwagenActive,.accountIcons a.winkelwagen:hover {
+    background-color: #d98a3f;
+    background-position: -24px 3px;
+    transition: 0.5s;
+}
+
+header h2 {
+    margin-top: 8.5em;
+    margin-bottom: 0;
+}
+
+.heroCampagne h2 {
+    margin-top: 8.5em;
+    line-height: 1.7em;
+}
+
+.heroRecept1 h2, .heroRecept2 h2, .heroRecept3 h2, .heroRecept4 h2, .heroRecept5 h2, .heroRecept6 h2, .heroRecept7 h2, .heroRecept8 h2, .heroRecept9 h2, .heroRecept10 h2, .heroKoe h2, .heroSushi h2, .heroOver h2 {
+    padding-bottom: 14em;
+    margin-top: 20vh;
+}
+
+.heroShop h2 {
+    margin-top: 20vh;
+}
+
+header h3 {
+    margin-top: 0;
+    font-size: 1.4em;
+}
+
+.button {
+    text-align: center;
+    display: block;
+    background-color: #d98a3f;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    border-style: none;
+    border-radius: 4px;
+    padding: 0.7em 1.4em;
+    margin: 2.2em auto 0.4em auto;
+    box-shadow: -1px 2px 6px rgba(0,0,0, 0.25);
+    width: 75vw;
+    cursor: pointer;
+}
+
+.pager {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0.5em;
+    align-items: center;
+    justify-content: center;
+}	
+
+.pager span{
+    display: block;
+    position: relative;
+    width: 1em;
+    height: 1em;
+    margin: .5em .20em;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 0.04em solid #418c9f;
+}
+
+.pager span.active {
+    width: 1em;
+    height: 1em;
+    background-color: #FFF; 
+    border-color:#418c9f;
+    border-style: solid;
+    border-width: 0.04em;
+    border-radius: 50%;
+    margin: 0.2em;
+}
+
+.pager span.active::before {
+    content: '';
+    width: 0.5em;
+    height: 0.5em;
+    background-color: #418c9f;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main {
+    margin: 1.25em;
+}
+
+/* === nieuwste boeken === */
+main h2 {
+    text-transform: uppercase;
+    color: #418c9f;
+    font-family:'Raleway', sans-serif;
+    font-size: 1.5em;
+    font-style: normal;
+    text-shadow: none;
+    text-align: left;
+    margin: 1.25em auto 0 0;  
+}
+
+main h3 {
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 1.25em;
+    color: #FFF;
+    text-align: center;
+    padding-top: 15vh;
+    padding-bottom: 1em;
+    text-shadow: 1px 1px 2px black;
+    z-index: 10;
+    position: relative;
+}
+
+.cardBoek h4 {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5em;
+    color: #FFF;
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 2px black;
+    margin-top: 0.5em;
+    z-index: 10;
+    position: relative;
+}
+
+main .blueLine {
+    width: 70vw;
+}
+
+.cardBoek .button {
+    margin-top: 16vh;
+    position: relative;
+    font-size: 1em;
+    width: 84%;
+    /* padding: 0.7em 1.4em; */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+}
+
+.cardBoek {
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+    margin: 1.25em;
+    position: relative;
+    background-repeat: no-repeat; 
+}
+
+.cardBoek .blueLine {
+    margin: 0 auto;
+}
+
+#nb1 {
+    background-image: url(../img/boek/simply-nigella_front.jpg);
+    background-position: center;
+    background-size: 220%;
+}
+
+#nb2 {
+    background-image: url(../img/boek/sweet_front.jpg);
+    background-position: center;
+    background-size: 120%;
+}
+
+#nb3 {
+    background-image: url(../img/boek/jamies-super-food_front.jpg);
+    background-position: -200px -380px;
+    background-size: 265%; 
+}
+
+/* === laatste nieuws === */
+article {
+    box-shadow: 2px 2px 5px rgba(0,0,0, 0.2);
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1.25em;
+}
+
+article h3 {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.1em;
+    color: #d98a3f;
+    text-align: left;
+    text-transform: none;
+    text-shadow: none;
+    margin-left: 0.8em;
+    padding-top: 0.2em;
+    padding-bottom: 0;
+    z-index: -10;   
+}
+
+article h4 {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.9em;
+    color: #000;
+    text-align: left;
+    text-transform: none;
+    text-shadow: none;
+    margin: 0.2em auto 0 1em;
+    line-height: 150%; 
+}
+
+#ln1 {
+    background-image: url(../img/nieuws/steak-veal.jpg);
+    margin: 1em;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150%;
+    height: 80vw;
+    margin: 1em;
+    position: relative;
+}
+
+/* verbergt sushi */
+#laatsteNieuws article.ln2 {
+    display: none;
+}
+
+#ln2 {
+    background-image: url('../img/nieuws/sushi-plank-gedraaid.jpg');
+    margin: 1em;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 220%;
+    height: 80vw;
+    margin: 1em;
+    position: relative;
+}
+
+#ln3 {
+    background-image: url('../img/nieuws/aziatisch_eten.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    height: 80vw;
+    margin: 1em;
+    position: relative;
+}
+
+#ln4 {
+    background-image: url('../img/nieuws/oranjebloesem.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    height: 80vw;
+    margin: 1em;
+    position: relative;
+}
+
+#ln5 {
+    background-image: url('../img/nieuws/gelato.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 80vw;
+    margin: 1em;
+    position: relative;
+}
+
+#ln6 {
+    background-image: url('../img/nieuws/popcorn.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 80vw;
+    margin: 1em;
+    position: relative;
+}
+
+article .button {  
+    margin-top: 1.6em;
+    margin-bottom: 1.8em;
+    box-shadow: none;
+    width: calc(100% - 2em);
+}
+/* === Recepten === */
+.rcpName {
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-template-rows: auto auto;
+    padding-top: 0.5em;
+    height: 4em;
+}
+
+.gerecht h3 {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1em;
+    color: #d98a3f;
+    text-align: left;
+    text-transform: uppercase;
+    text-shadow: none;
+    margin-left: 0.8em;
+    padding-top: 1.6em;
+    padding-bottom: 0;    
+}
+
+ul.foodIcons {
+    display: flex;
+	flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 0.6em;
+    padding-right: 1em;
+    padding-left: 0.2em;
+    margin: 0;  
+}
+
+.time {
+    font-size: 0.65em;
+    font-weight: 600;
+    padding: 0 1.2em;
+    margin-top: -0.2em;
+    margin-bottom: -0.5em; 
+    color: #418c9f;
+    text-align: right;
+    grid-column: span 2;
+}
+
+.rcpName li {
+    margin: auto 0;
+	padding-left: 1em;
+    width: 2.5em;
+    list-style-type: none; 
+}
+
+ul.ingredients {
+    margin-top: 0;
+    margin-bottom: 0.2em;
+}
+
+ul.ingredients li {
+    font-weight: 600;
+}
+
+.bamiImg {
+    background-image: url(../img/recepten/noodle-soup.jpg);
+    margin: 1em;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    height: 80vw;
+    position: relative;
+}
+
+article .button {
+    margin-top: 0.8em;
+    margin-bottom: 1em;
+    box-shadow: none;  
+}
+
+/* verbergt tagliatelle */
+section#nieuwRecepten article:nth-of-type(3) {
+    display: none;
+}
+
+#overOns {
+    margin: 1.25em;
+    margin-top: 0;
+}
+
+#overOns h2, .error h1 {
+    text-transform: uppercase;
+    color: #418c9f;
+    font-family:'Raleway', sans-serif;
+    font-size: 1.7em;
+    font-style: normal;
+    text-shadow: none;
+    text-align: left;
+    margin: 0 auto 0.3em 0;
+}
+
+#overOns p {
+    padding-bottom: 0.6em;
+    margin-right: 0;
+}
+
+#overOns p:nth-of-type(n+2):nth-of-type(-n+5) {
+    text-align: right;
+    margin-top: 1em;
+    
+}
+
+#overOns p:last-of-type {
+    color: #418c9f;
+    font-weight: 700;
+    padding-bottom: 0.2em;
+}
+
+.imgVintage {
+    background-image: url(../img/over/vintage_cooking.jpg);
+    background-repeat: no-repeat;
+    background-position: 53% 50%;
+    background-size: 120%;
+    width: 100%;
+    height: 100vw;
+    position: relative;
+    background-size: cover;
+    margin-right: 0em;
+}
+
+#overOns .button {
+    max-width: 100vw;
+    margin-top: 0.4em; 
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    width: 100%;
+    box-shadow: none;
+}
+
+/* === campagne === */
+article.nigella {
+    overflow: hidden;
+    box-shadow: none;
+    margin: 0.5em 0;
+}
+
+#campagne .container {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto ;
+    overflow: hidden;
+    position: relative;
+}
+
+#videoNigella, #videoSushi {
+    width: 100%;
+    height: 58vw;
+    object-fit: cover;
+} 
+
+#campagne .videoNigella {
+    grid-row: 1/2;
+}
+
+#campagne .videoNigella video[poster], .videoSushi video[poster] {
+    object-fit:contain; 
+}
+
+.nigella p:first-of-type {
+    font-weight: 700;
+}
+
+#campagne .button {
+    width: 100%;
+}
+  
+#campagne h2 {
+    margin: 0.6em 0;
+}
+
+.heading2 h2 {
+    font-size: 1.2em;
+}
+
+.heading2 ul {
+    padding-left: 1.2em;
+    margin: 0;
+}
+
+.heading2 li {
+    font-weight: 600;
+}
+
+.cardRcp img.rcp {
+    margin: 1em;
+    width: calc(100% - 2rem);
+}
+
+.pagination {
+    margin: 2em auto;
+    text-align: center;
+}
+
+.pagination ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.pagination li {
+    padding: 0.4em 0.5em;
+    text-decoration: none;
+    color: #418c9f;
+    font-family:'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    display: inline;
+    vertical-align: center;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+  
+.pagination li:first-child, .pagination li:last-child {
+    border: 1.5px solid #418c9f;
+    border-radius: 6px;
+    opacity: 1;
+    background-color: #418d9534 ;
+}
+.pagination li:hover {
+    background: #f0f0f0;
+    opacity: 1;
+}
+
+.pagination li.active {
+    opacity: 1;
+}
+
+/*=== footer ===*/
+footer {
+    background-color: #418c9f;
+}
+
+footer img{
+    width: 6.25em;
+    padding-top: 1.25em;
+    padding-bottom: 4em;
+}
+
+.footerIcons {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1.25em 0 1.25em ;
+}
+
+#footerSocMed {
+	display: flex;
+	flex-direction: row;
+    padding-top: 2.8em;
+    padding-left: 0;
+}
+
+#footerSocMed li {
+    margin: auto 0 auto 0;
+	padding-left: 1.25em;
+    list-style-type: none;
+}
+
+#footerSocMed i {  
+    font-size: 3em; 
+    color: white;
+    font-family: 'FontAwesome';
+    font-style: normal;
+}
+
+.footerNav {
+    margin-bottom: 3em;
+}
+
+.footerNav ul {
+    padding-left: 1.25em;
+    margin: 0;
+    list-style: none;
+}
+
+.footerNav ul li {
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1em;
+    padding-bottom: 0.6em;
+}
+
+ul.footerContactUs {
+    margin: 0;
+    list-style: none;
+}
+
+.contact ul li {
+    text-align: right;
+    color: #FFF;
+    text-transform: capitalize;
+    font-style:normal;
+    font-weight: 700;
+    font-size: 0.9em;
+    margin-right: 1.25em;
+    padding-bottom: 0.5em;
+}
+
+footer p {
+    text-align: center;
+    color: #FFF;
+    text-transform: capitalize;
+    font-style:normal;
+    font-weight: 300;
+    font-size: 0.9em;
+    margin:  0.5em auto 0 auto;
+    padding-bottom: 1em;
+}
+
+/* === campagne === */
+#boekSellectie {
+    display: none;
+}
+
+#nigellaRecepten .container article:nth-child(-n+6), #nigellaRecepten .container article:nth-child(10)  {
+    display: none;
+}
+
+#overNigella {
+    margin: 2em 0;
+}
+
+#overNigella h3, #koe h3, #sushi h3 {
+    text-transform: uppercase;
+    color: #418c9f;
+    font-family:'Raleway', sans-serif;
+    font-size: 1.2em;
+    font-style: normal;
+    text-shadow: none;
+    text-align: left;
+    margin: 0;
+    padding: 1em 0 0.4em 0;
+}
+
+#overNigella p:first-of-type {
+    margin-top: 0em;
+}
+
+#overNigella p.pboek {
+    margin-top: 2em;
+}
+
+#overNigella h2 {
+    margin-left: 0;
+}
+
+#overNigella ul {
+    margin: 0 0 1.4em 0;
+    font-weight: 600;
+    padding-left: 1.2em;
+}
+
+#overNigella p {
+    margin-top: 1em;
+}
+
+#overNigella p:nth-of-type(2) {
+    margin-top: 2em;
+}
+
+/* === registreer === */
+section.heroRegister {
+    background-image: url(../img/hero/hero_register.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 380px;
+}
+
+#formholder {
+    background-color : #fff; 
+    font-family : 'Raleway', sans-serif;
+    font-size : 14px;
+    color : #000;
+    margin-left : auto;
+    margin-right : auto;;
+}
+
+label {
+    padding: 0.3em 0;
+    font-weight: 600;
+    align-items: center;
+}
+
+input.veld, textarea.veld,input#verstuur  {
+    padding : 0.4em 1.4em;
+    border : 1px solid #999;
+    font-weight: 500;
+    width: 100%;
+    max-width: 600px;
+}
+
+input#wachtwoord.veld {
+    font-size: 1em;
+}
+
+span.error {		
+    background-image: url(../img/logos/logo_error.svg);
+    display: none;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    align-self: end;
+    margin: -2.1em 1em 1.2em 0;
+}
+
+form div:nth-child(4) span.error {
+    margin-bottom: 7px;
+}
+
+fieldset.registreer, fieldset.contact {
+    border: none;
+    margin: 0 auto;
+    width: calc(100vw - 4em);
+    max-width: 600px;
+}
+    
+legend {
+    text-transform: uppercase;
+    color: #418c9f;
+    font-family:'Raleway', sans-serif;
+    font-size: 1.7em;
+    font-weight: 700;
+    text-align: left;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+fieldset.contact form div:nth-child(4), fieldset.registreer form div:nth-child(4) {
+    flex-direction: row;
+    gap: 0.6em;
+    align-items: center;
+    margin-bottom: 1.8em;
+    width: 20em;
+}
+
+input#aantal.veld, input#artikel1.veld, input#artikel2.veld {
+    padding: 0.4em;
+    width: 3em;
+}
+
+input#verstuur, input#ww_wijzigen {
+    text-transform: uppercase;
+    background-color: #418c9f;
+    color: #fff;
+    font-family:'Raleway', sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    border: none;
+    padding: 0.5em 0;
+}
+
+main.register div img {
+    display: none;
+}
+
+.yesJS{ display: block;}
+.noJS{ display: none;}
+
+/*  === contact === */
+input#nieuwsbrief, input#heer, input#mevrouw, input#nederland, input#anders {
+    accent-color: #418c9f;
+    margin: 2px;
+    cursor: pointer;
+    width: 2.4em;
+    height: 1.5em;
+}
+
+/* === Recepten === */
+
+/* logo verbergen */
+.heroRegister div.logo, .headerRecepten div.logo, .headerNieuws div.logo, .heroRecept1 div.logo, .heroRecept2 div.logo, .heroRecept3 div.logo, .heroRecept4 div.logo, .heroRecept5 div.logo, .heroRecept6 div.logo, .heroRecept7 div.logo, .heroRecept8 div.logo, .heroRecept9 div.logo, .heroRecept10 div.logo, .heroKoe div.logo, .heroSushi div.logo, .heroOver div.logo, .heroContact div.logo, .heroShop div.logo, .headerBoek div.logo, .headerAccount div.logo {
+    display: none;
+}
+
+.categorie, .bereiding{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: left;
+}	
+
+.categorie span, .bereiding span{
+    display: block;
+    position: relative;
+    width: 1.6em;
+    height: 1.6em;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 0.15em solid #418c9f;
+    opacity: 0.7;
+}
+
+.categorie span:hover, .bereiding span:hover {
+    opacity: 1;
+}
+
+.categorie span.active, .bereiding span.active {
+    width: 1.6em;
+    height: 1.6em;
+    background-color: #FFF; 
+    border-color:#418c9f;
+    border-style: solid;
+    border-width: 0.15em;
+    border-radius: 50%;
+    opacity: 0.7;   
+}
+
+.categorie span.active::before, .bereiding span.active::before {
+    content: '';
+    width: 0.9em;
+    height: 0.9em;
+    background-color: #418c9f;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+.categorie p {
+    margin: 0 0 0 0.6em;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    padding-top: 0.2em;
+}
+
+.categorie div, .bereiding div {
+    margin: 0.5em 0;
+    display: flex;
+    align-items: center;
+}
+
+.bereiding img {
+    width: 1.5em;
+    margin: 0 0 0 1em;
+}
+
+.rangeContainer {
+    width: 200px;
+}
+ 
+.rangeSlider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 180px;
+    height: 2px;
+    background: #418c9f;
+    opacity: 0.7;
+    transition: opacity .2s;
+    margin: 0.8em 0.2em;
+}
+
+.rangeSlider::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: #418c9f;
+    border-radius: 10px;
+    position: absolute;
+    transform: translate(0%, -50%);
+    z-index: -10;
+}
+  
+.rangeSlider::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: #418c9f;
+    border-radius: 10px;
+    position: absolute;
+    transform: translate(148px, -50%);
+    z-index: -10;   
+}
+
+.rangeSlider:hover {
+    opacity: 1;
+}
+  
+.rangeSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 26px;
+    height: 26px;
+    border: 2px solid #418c9f;
+    border-radius: 13px;
+    background-origin: padding-box;
+    background: #eee;
+    cursor: pointer;
+}
+  
+.rangeSlider::-moz-range-thumb {
+    width: 26px;
+    height: 26px;
+    background: #eee;
+    cursor: pointer;
+}  
+
+.rangeContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#minValue, #maxValue {
+    font-family:'Raleway', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+.personen {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    margin-top: 1em;
+    grid-area: 2/1/3/3;
+}
+
+.personen img {
+    grid-row: 1/3;
+    margin: 0.3em 0;
+}
+
+.recepten .symbols {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+}
+
+.categorie {
+    grid-area: 1/1/2/2;
+}
+
+.bereiding {
+    grid-area: 1/2/2/3;
+}
+
+hr.line {
+    width: 100%;
+    margin: 1.6em 0 1.6em 0;
+    background-color: #418c9f;
+    height: 4px;
+    border: none;
+}
+
+.recepten hr.line, .shop hr.line {
+    display: none;
+    width: 100%;
+    margin: 1.6em 0 2em 0;
+    background-color: #418c9f;
+    height: 4px;
+    border: none;
+}
+.recepten #dynamicRecepten article:nth-child(n+7) {
+    display: none;
+}
+
+/* === Noedel soep === */
+.gerecht h3 {
+    margin: 0.8em 0;
+    z-index: -1;
+}
+
+.gerecht li {
+    font-weight: 600;
+}
+
+.ingredienten ul, #volIngredienten ul {
+    margin-bottom: 1.4em;
+    margin-top: 1em;
+    padding-left: 1em;
+}
+
+/* === Nieuws === */
+article.cardNws {
+    display: flex;
+    flex-direction: column;
+}
+.cardNws .textNws {
+    margin-bottom: auto;
+}
+
+img.koeDelen {
+    border-radius: 2.4em;
+    border: #418d957d solid 4px;
+    margin: 1em auto;
+}
+
+/* === koe === */
+#animation_container {
+    margin: -18em auto 0 auto;
+}
+
+.dynamicPopup {
+    display: none;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -90%);
+    background-color: #fff;
+    padding: 20px;
+    border: 4px solid #418d957d;
+    border-radius: 2.4em;
+    width: 90%;
+    max-width: 600px;
+    z-index: 999;
+    margin: 0 auto;
+}
+
+.dynamicPopup.show {
+    display: block;
+}
+
+.dynamicVlees img {
+    margin: 0 auto;
+    width: 100%;
+}
+
+#omschrijving{
+    font-size: 0.8em;
+    margin-top: 1em;
+}
+
+.show button {
+    width: 5.5em;
+    display: block;
+    margin: 0 auto;
+    color: #fff;
+    background-color: #418c9f;
+    border: none;
+    border-radius: 4PX;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    transition: 250ms ease-in-out;   
+}
+
+#overlay.show {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.ontdekText1 {
+    margin-bottom: 1.8em;
+}
+
+/* === sushi === */
+#sushi h2 {
+    font-size: 1.2em;
+    margin-left: 0;
+}
+
+#sushi h3 {
+    padding: 0.2em 0;
+    margin-top: 0.8em;
+}
+
+#sushi div:nth-of-type(2) {
+    margin-top: 0.4em;
+}
+
+.videoSushi {
+    margin: 1em 0;
+}
+
+.sushirijst ul {
+    font-weight: 600;
+    padding-left: 1em;
+}
+
+/* === over ons -=== */
+main.over {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+}
+.overImg {
+    position: relative;
+    width: 100%;
+    padding-top: 70%;
+    margin-top: 0.4em;
+}
+
+.overImg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.over h2 {
+    margin: 0.5em auto 0.5em 0
+}
+
+.over p:nth-of-type(3) {
+    margin-top: 1em;
+}
+
+/* === contact === */
+main.contact legend {
+    margin-bottom: 1em;
+    padding-top: 0.6em;     
+}
+
+main.contact form div:last-child {
+    width: 55%;
+    margin: 3em auto 1em auto;
+}
+
+main.contact label {
+    padding: 0.7em 0 0.5em 0;
+}
+
+/* === shop === */
+main.shop h2 {
+    display: none;
+}
+.uitgelicht {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 100%;
+}
+
+.uitgelicht:hover {
+    box-shadow: 2px 2px 6px rgba(0,0,0, 0.75);
+    transition-duration: 500ms; 
+}
+
+.cardUitgelicht h3, .boekthumbs h3, .textBoek h3 {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.3em;
+    color: #d98a3f;
+    text-align: left;
+    margin-left: 0.5em;
+    padding-top: 0;
+    padding-bottom: 0.3em;
+    z-index: -10;
+}
+
+.titelContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 4.1em;
+}
+
+h3#titel {
+    text-align: center;
+    align-self: center;
+    margin: 0;
+    padding: 0;
+}
+
+#uit1Img {
+    background-image: url(../img/boek/simply-nigella_front.jpg);
+    background-position: center;
+    background-size: 65%;
+}
+
+#uit2Img {
+    background-image: url(../img/boek/sweet_front.jpg);
+    background-position: center;
+    background-size: 60%
+}
+
+#uit3Img {
+    background-image: url(../img/boek/jamies-super-food_front.jpg);
+    background-position: center;
+    background-size: 65%;
+}
+
+.uitgelicht div.textUit, div.textBoek, div.comment {
+    font-family:'Raleway', sans-serif;
+    font-size: 0.9em;
+    font-weight: 600;
+    text-transform: none;
+    color: #000;
+    margin: 0 0.8em auto 0.8em;
+    text-align: left;
+    display: block;
+}
+
+.uitgelicht span.button {
+    margin: 0.4em auto;
+    width: calc(100% - 0.8em);
+}
+
+.dynamicBoekInhoud span.button {
+    margin: 0.3em auto;
+    width: 96%;
+    font-size: 1em;
+}
+
+.imgFront {
+    margin-bottom: auto;
+    margin-top: auto;
+    height: auto;
+}
+
+span.prijs {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 500;
+    color: #000;
+}
+
+.boekprijs {
+    text-transform: uppercase;
+    color: #418c9f;
+    font-family:'Raleway', sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: right;
+    margin: 0 0.8em 0.3em 0;
+}
+
+#uitgelicht .container {
+    align-items: stretch;
+    margin-bottom: 2em;
+}
+
+/* --- dropdown menu's --- */
+.dropdown {
+    position: relative; 
+    display: flex;
+    flex-direction: row;  
+}
+
+/* De checkbox is verborgen, maar wordt gebruikt om te togglen */
+.dropdown input[type="checkbox"] {
+    display: none;
+}
+
+/* Het label fungeert als de toggle-knop voor het menu */
+.dropdown label {
+    border-bottom: 1px solid #418d957d;
+    text-transform: uppercase;
+    padding: 1em;
+    cursor: pointer;
+    width: 100%;
+}
+
+label[for="dropdownToggle1"], label[for="dropdownToggle2"], label[for="dropdownToggle3"] {
+    border-top: 1px solid #418d957d;
+}
+label[for="dropdownToggle1"] {
+    border-bottom: none;
+}
+/* Het dropdown-menu is standaard verborgen */
+.dropdown .menu {
+    display: none;  /* Menu is verborgen als checkbox niet is geselecteerd */
+    position: absolute;  /* Maakt het mogelijk het menu boven andere elementen te tonen */
+    background-color: #fff;
+    border-bottom: 1px solid #418d957d;  /* Lichte grens voor het menu */
+    z-index: 1;  /* Zorgt ervoor dat het menu boven andere elementen wordt getoond */
+}
+
+/* Het menu wordt getoond als de checkbox is geselecteerd */
+.dropdown input[type="checkbox"]:checked ~ .menu {
+    display: block;  /* Toon het menu als de checkbox is aangevinkt */
+    top: 3.25em
+}
+
+/* Stijl voor de menu-items */
+.dropdown .menu a { 
+   
+    display: block;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.dropdown .menu a:hover {
+    background-color: #f1f1f1;
+}
+
+.shop .rangeContainer {
+    display: flex;
+    flex-direction: row;
+    height: 52px;
+    border-bottom: 1px solid #418d957d;
+    width: 100%;
+    padding-left: 1em;
+}
+
+.shop .rangeContainer p {
+    width: 5.2em;
+    margin: 0 0 0 0.5em;
+    font-size: 0.9em;
+}
+.shop .rangeSlider {
+    width: 8em;
+}
+.shop .rangeSlider::after {
+    transform: translate(108px, -50%);
+}
+.shop #maxValue {
+    width: 2.6em;
+}
+
+.menu a {
+    font-weight: 500;
+    font-size: 1.2em;
+    padding: 0.8em;
+    width: calc(100vw - 2.5em);  
+}
+.menu a:not(:last-child) {
+    border-bottom: 1px solid #418d957d;
+}
+
+.menus {
+    margin-bottom: 2em;
+}
+
+.truncateMulti {
+    position: relative; /* Maak de container relatief gepositioneerd */
+    max-height: 4.45em; /* Toon maximaal 3 regels tekst (elke regel is ongeveer 1em hoog) */
+    overflow: hidden;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #000;
+    margin: 0 0.5em 0.4em 0.5em;
+}
+
+.truncateMulti::after {
+    content: " ... "; /* Voeg ellipses toe aan het einde van de tekst */
+    position: absolute; /* Absoluut gepositioneerd binnen de container */
+    bottom: 0; /* Plaats het aan de onderkant van de container */
+    right: 0; /* Plaats het aan de rechterkant van de container */
+}
+
+.boekthumbs {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+}
+
+.imgFront img {
+    margin: auto;
+    height: auto;
+    padding: 0 0.3em;
+}
+.boekthumbs article:nth-child(n+7) {
+    display: none;
+}
+.shop article.uitgelicht {
+    margin-bottom: 0;
+    height: 100%;
+}
+
+.dynamicBoekInhoud {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+div.imgFront
+
+/* === Boek === */
+main.boek {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.imgPrijs {
+    width: calc(100% - 1.6em);
+    display: grid;
+    grid-template-columns: 2.2fr 1fr ;
+    grid-template-rows: auto 1fr;
+}
+
+.imgBoek {
+    background-repeat: no-repeat;
+    width: calc(100% - 1.6em);
+    height: 75vw;
+    margin: 0 0.8em;
+}
+
+.imgBoek img {
+    width: 100%;
+}
+.imgPrijs p.boekprijs {
+    grid-area: 1/2/2/3;
+    margin: auto 0.2em 1em auto;    
+}
+
+.thumbnails {
+    grid-area: 2/1/3/3;
+    display: flex;
+    gap: 4vw;
+    margin: 0.8em;
+}
+
+.thumbnails img {
+    width: 16vw;
+}
+
+.textBoek h3 {
+    margin-left: 0;
+    text-transform: uppercase;
+    color: #418c9f;
+    text-shadow: none;
+}
+
+/* uitklap tekst */
+details {
+    position: relative;
+    overflow: hidden;
+    background-color: #FFF;
+    color: #418c9f;        
+}
+
+details p {
+    color: #000;
+}
+
+summary {
+    color: #418c9f;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+summary:hover {
+    color: #418d957d;  
+}
+
+details[open] summary::marker {
+    transform: rotate(90deg); /* Draai de pijl bij openen */
+}
+
+.textBoek p.verberg {
+    display: none;
+}
+
+.textBoek, .comment {
+    margin: 0 0.6em auto 0;
+}
+
+.cat ul, .klant ul {
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0.5em 0;
+}
+
+.cat ul li, .klant ul li {
+    color: #418c9f;
+    border-right: solid 1px #418c9f;
+    font-weight: 600;
+    width: 100%;
+    padding: 0 0.15em;
+    align-self: center;
+}
+
+.klant ul li {
+    font-family: "Roboto", sans-serif;
+    color: #000;
+    border-right: solid 1px #000;
+    font-weight: 500;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+.cat ul li:last-child{
+    border: none;
+    width: 130%;
+}
+
+.klant ul li:last-child {
+    border: none;
+}
+
+.klant ul li:nth-child(2) {
+    width: 80%;
+}
+
+.shopBoek .container a.button {
+    padding: 0.6em 0;
+    margin: 1.4em auto 0.4em auto;
+    width: 100%;
+    max-width: 30em;
+}
+.shopBoek .container a.button img {
+    width: 1.8em;
+    display: unset;
+    vertical-align: middle;
+}
+
+.reviews h2 {
+    width: 10em;
+    height: auto;
+    margin: 1em 0;
+}
+
+div.review {
+    margin-bottom: 2.8em;
+}
+
+.stars4, .stars4half, .stars5 {
+    background-image: url(../img/logos/stars.svg);
+    background-position: 21% 50%;
+    background-size: 200%;
+    background-repeat: no-repeat;
+    height: 2.6em;
+    width: 40vw;
+    margin-bottom: 0.2em;
+}
+
+.stars4 {
+    background-position: 0% 50%;
+    background-size: 246%;
+    height: 2.6em;
+    width: 31vw;
+}
+
+.stars5 {
+    background-position: 0% 50%;
+}
+
+.punten ul {
+    list-style: none;
+    font-weight: 600;
+}
+
+.punten ul li {
+    margin: 0.2em 0 0.8em 0;
+}
+.punten img {
+    float: left;
+    margin-right: 0.5em;
+}
+
+.reviews .review:not(:nth-child(-n+4)) {
+    display: none;
+}
+
+/* === Winkelwagen === */
+main.winkelwagen {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 0.8em;
+    margin: 1em 0 2.6em 0;
+}
+
+.product img.imgProduct {
+    grid-area: 1/1/2/2;
+    max-height: 100%;
+    margin: 0 auto;
+}
+
+.product .tekstBoekWagen {
+    grid-area: 1/2/2/3;
+    padding-top: 0.8em;
+}
+
+.product .tekstBoekWagen ul {
+    list-style: none;
+    font-weight: 600;
+}
+
+.product .tekstBoekWagen ul li {
+    margin-bottom: 0.5em;
+}
+.product .tekstBoekWagen ul li:nth-child(-n+2) {
+    color: #418c9f;
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+.product .tekstBoekWagen ul li:nth-child(n+3) {
+    font-size: 0.8em;
+}
+
+.product .boekprijs {
+    grid-area: 2/1/3/2;
+    text-align: left;
+    font-size: 1.1em;
+    align-self: center;
+    margin: 0;
+}
+
+.product .aantalProduct {
+    grid-area: 2/2/3/3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.product .aantalProduct .verwijderen {
+    align-self: center;
+    cursor: pointer;
+}
+
+.product .aantalProduct span {
+    display: none;
+}
+.product .aantalProduct label {
+    font-size: 1em;
+    align-self: center;
+}
+
+.product input {
+    height: 2.4em;
+    width: 3.8em;
+    border-radius: 5px;
+    border: solid 1px #000;
+    margin: 0 0.5em;
+}
+
+img.logoBin {
+    width: 1.8em;
+    min-width: 0.8em;
+    align-self: flex-start;
+    align-self: center;
+}
+
+.totaal  {
+    display: none;
+}
+/* === Account === */
+.menuVast {
+    display: none;
+}
+.account a.active {
+    z-index: -10;
+    position: relative;
+}
+.account a.active, .account a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+#drpdAccount label, #drpdAccount .menu a {
+    padding: 1em 0.4em;
+    width: calc(100vw - 2.5em);
+    display: block;
+}
+.dropdown #drpdAccount {
+    height: 53px;
+}
+
+.accountMenus {
+    padding: 1em 0;
+}
+
+main.account legend {
+    font-size: 1.4em;
+    padding: 0.4em 0;
+}
+.account fieldset input.veld {
+    max-width: none;
+}
+fieldset.persoonlijk, fieldset.inloggen {
+    padding: 0;
+    margin:0;
+    border: none;
+    width: 100%;
+}
+fieldset.persoonlijk .aanhef {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    min-width: 16em;
+    margin-bottom: 1em;
+    height: 58px;
+}
+fieldset .aanhef span {
+    font-weight: 600;
+    padding: 0.4em 0;
+
+}
+fieldset .span.aanhefLabel {
+    grid-area: 1/1/2/3;
+}
+fieldset.persoonlijk .heer {
+    grid-area: 2/1/3/2;
+    display: flex;
+    flex-direction: row;
+}
+fieldset.persoonlijk .mevr {
+    grid-area: 2/2/3/3;
+    display: flex;
+    flex-direction: row;
+}
+fieldset.persoonlijk .nederland, fieldset.persoonlijk .anders {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin-bottom: 0.6em;
+    height: 1.7em;
+}
+fieldset .landRadios {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0;
+}
+fieldset .telefoon, fieldset .email, fieldset .bevestigen, fieldset .wachtwoord, fieldset .wwButton {
+    width: 80%;
+}
+fieldset .wwButton {
+    margin-bottom: 1em;
+}
+input#ww_wijzigen {
+    font-size: 1em;
+}
+
+/* === 404 === */
+.errorContainer h1 {
+    margin: 25vh 1em 1em 1em;
+    text-align: center;
+    text-shadow: 2px 2px 3px #000; 
+}
+.errorContainer p {
+    margin: 1em 2em;
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.2em;
+    color: #fff;
+    text-shadow: 2px 2px 5px #000; 
+}
+.errorContainer .container a.button {
+    margin: 3em auto;
+}
+
+.errorContainer {
+    background-image: url(../img/hero/404.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+}
+
+/* ======================================================= */
+/* ==================== Tablet Styles ==================== */
+/* ======================================================= */
+@media screen and (min-width:768px) {
+    .blueLine {
+        max-width: 17em;
+    }
+
+    #showMenu {
+        top: 17px;
+    }
+
+    #showMenu:checked + ul.list {
+        top: 80px;
+        z-index: 10;
+        height: 540px;
+        width: 18em;
+    }
+
+    #showMenu:checked + ul li {
+        padding-left: 3em;
+        font-size: 1.2em;
+        top: 80px;
+    }
+
+    .accountIcons {
+        top: 0px;
+    }
+
+    nav {
+        display: grid;
+        width: 100%;
+        background-color: rgba(0,0,0, 0.75);
+        top:0;
+        left:0;
+        height: 80px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 80px 1fr;
+        row-gap: 1em;
+    }
+
+    .logo1 {
+        width: 8.75em;
+    }
+
+    .logo2 {
+        width: 8.75em;
+        margin-top: -9.75em;
+    }
+
+    header h2 {
+        font-size: 1.4em;
+        margin-top: 9em;
+        line-height: 1.5em;                        
+     }
+     
+    header h3 {
+         font-size: 1.7rem;
+         line-height: 1.5em;
+         margin-top: -0.5em; 
+      }
+
+    .button {
+        margin-top: 8em;
+        padding: 0.7em 1em;
+        width: 30vw;
+    }
+
+    .heroCampagne a.button {
+        margin-top: 7%;
+        align-self: center;
+    }
+
+    section.heroRecept1, section.heroRecept2, section.heroRecept3, section.heroRecept4, section.heroRecept5, section.heroRecept6, section.heroRecept7, section.heroRecept8, section.heroRecept9, section.heroRecept10, section.heroKoe, section.heroSushi, section.heroOver {
+        height: 80vh;
+    }
+
+    section.heroCampagne {
+        height: 60vw;
+        background-position: center top;
+    }
+
+    .heroCampagne h2 {
+        margin-top: 21%;
+    }
+
+    /* === nieuwste boeken === */
+    main {
+        margin: 2em;
+    }
+
+    main h2 {
+        font-size: 1.5em;
+        margin-bottom: 0.4em;
+    }
+
+    .cardBoek h3 {
+        font-size: 1.6em;
+    }
+    
+    .cardBoek h4 {
+        font-weight: 700;
+        font-size: 1.8em;
+        margin-top: 1em;
+    }
+
+    #nb1 {
+        background-size: 118%;
+    }
+
+    #nb2 {
+        background-size: 100%;
+    }
+    
+    #nb3 {
+        background-position: -20px -435px;
+        background-size: 140%;  
+    }
+
+    .cardBoek {
+        height: 75vh;
+        margin: 1em 0;
+    }
+
+    .cardBoek .button {
+        font-size: 1.4em;
+        padding: 0.5em 0.3em;
+        margin-top: 17vh;
+        margin-bottom: 1.2em;
+        width: 40%;
+    }
+
+    .cardBoek h3 {
+        padding-top: 14vh;
+    }
+
+    #laatsteNieuws .container a.button {
+        bottom: 4em;
+        margin: 2% auto 4% auto;
+        position: absolute;
+        left: 50%;
+        width: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* === laatste nieuws === */  
+    section.heroKoe {
+        background-size: 100%;
+        background-position: 50% 15%;
+    }
+    article h3 {
+        font-size: 1.2em;
+        margin-left: 0.6em;  
+    }
+
+    article h4 {
+        font-weight: 600;
+        font-size: 1em;
+        width: calc(100% - 0.5em);
+        padding-right: 2em;
+    }
+
+    article {
+        position: relative;
+        margin-bottom: 0.8em;
+    }
+
+    #ln1.imgContainer {
+        background-size: 100%;
+        height: 60vw;
+    }
+
+    #laatsteNieuws article h4 {
+        width: auto;
+    }
+
+    #laatsteNieuws article span.button {  
+        margin-top: -5.5em;
+        margin-bottom: 3em;
+        position: relative;
+        width: 37%;
+        font-size: 1.4em;
+        padding: 0.45em 0.3em;            
+    }
+    
+    #nieuwRecepten div.container {
+        display: flex;
+        gap: 2em;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+
+    article.cardRcp {
+        width: calc(50% - 0.5rem);
+        height: auto;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.2); 
+    }
+
+    .cardRcp a.button {
+        margin-top: 0.8em;
+        margin-bottom: 1em;
+        box-shadow: -1px 2px 6px rgba(0,0,0, 0.25);
+    }
+
+    .container a.button:hover {
+        box-shadow: -1px 2px 6px rgba(0,0,0, 0.75);
+        transition-duration: 500ms; 
+    }
+
+    #nigellaRecepten .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-gap: 1em;
+    }
+
+    #nigellaRecepten article.cardRcp {
+        width: 100%;
+    }
+
+    #nigellaRecepten .container article:nth-child(10) {
+        display: block;
+    }
+
+    #campagne .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        margin: 0em;
+    }
+
+    #videoNigella {
+        width: 100%;
+        height: 63vw;
+        object-fit: cover;
+    }
+
+    #campagne .videoNigella {
+        grid-column: 1/3;
+    }
+    #campagne article.nigella {
+        grid-column: 1/3;
+    }
+    
+    .heading2 {
+        margin: 2em 0;
+    }
+    #campagne .button {
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 0;
+        width: 80%;
+    }
+
+    .boekVoorraad {
+        display: flex;
+        flex-wrap: wrap;
+        grid-column: 1/3;
+    }
+
+    .boekVoorraad li {
+        flex-basis: 50%;
+    }
+    
+    #overNigella .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto;
+    }
+
+    #overNigella h2 {
+        grid-column: 1/3;
+    }
+
+    #overNigella div:first-of-type {
+        grid-column: 1/3;
+    }
+
+    #overNigella div:nth-of-type(2) {
+        grid-column: 1/3;
+    }
+
+    #overNigella img {
+        grid-column: 1/2;
+        width: 45vw;
+    }
+
+    #overNigella div.container:nth-of-type(5) {
+        grid-column: 2/3;
+        margin: 1em;
+    }
+
+    #overNigella div.container:nth-child(5) {
+        grid-column: 2/3;
+        margin: 1em;
+    }
+
+    #overNigella p.pboek {
+        margin: 1.2em;
+    }
+
+    #overNigella p:nth-of-type(2) {
+        margin-top: 1.2em;
+        grid-column: 1/3;
+        margin-bottom: 0;
+    }
+
+    /* === Over ons === */
+    section#overOns {
+        margin: 2em 0;          
+    }
+
+    #overOns .container {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        overflow: hidden;
+    }
+    
+    #overOns h2 {
+        margin-top: 0;
+        margin-bottom: 0;
+        grid-column: 1/3;
+    }
+
+    #overOns p {
+        grid-column: 1/3;
+        margin-bottom: 0;
+    }
+
+    #overOns p:nth-of-type(n+2):nth-of-type(-n+5) {
+        margin: 0;
+        grid-column: 2/-1;
+        text-align: left;
+    }
+
+    .imgVintage {
+        grid-column: 1/2;
+        grid-row: 3/8;
+        background-size: 190%;
+        height: 100%;
+    }
+
+    #overOns .button {
+        margin-bottom: 0;
+    }
+
+    /* === footer === */
+    footer img{
+        width: 5em;
+        margin-left: 0.5em;
+        padding-bottom: 1em;
+    }
+    
+    .footerIcons {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 1.75em 0 1.75em ;
+    }
+    
+    #footerSocMed {
+        display: flex;
+        flex-direction: row;
+        padding-top: 2.8em;
+    }
+
+    .lowerHalf{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .contact ul li {
+        margin-right: 2em;
+    }
+
+    .footerNav {
+        margin: 0 0.75em 0 0.5em;
+    }
+
+    footer p {
+        margin-top: -2em;
+        padding-bottom: 1em;
+    }
+
+    /* === registreer === */
+    section.heroRegister {
+        height: 480px;
+    }
+
+    .register label {
+        padding: 0.6em 0;
+        font-weight: 600;
+    }
+
+    .register input.veld, .contact input.veld, .account input.veld {
+        padding : 0.6em 2em;
+    }
+
+    .register form div:last-child {
+        width: 30%
+    }
+
+    input#verstuur {
+        width: 100%;
+   }
+
+    input#verstuur:hover, input#ww_wijzigen:hover {
+        box-shadow: -1px 2px 6px rgba(0,0,0, 0.75);
+        transition-duration: 500ms;
+    }
+
+    /* === Recepten === */
+    .heroRegister div.logo, .headerRecepten div.logo, .headerNieuws div.logo, .heroRecept1 div.logo, .heroRecept2 div.logo, .heroRecept3 div.logo, .heroRecept4 div.logo, .heroRecept5 div.logo, .heroRecept6 div.logo, .heroRecept7 div.logo, .heroRecept8 div.logo, .heroRecept9 div.logo, .heroRecept10 div.logo, .heroKoe div.logo, .heroSushi div.logo, .heroOver div.logo, .heroContact div.logo, .heroShop div.logo, .headerBoek div.logo, .headerAccount div.logo {
+        display: block;
+        margin-top: -5em;
+    }
+
+    .recepten section {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto;
+    }
+
+    .categorie, .bereiding{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .categorie div, .bereiding div {
+        margin-right: 2em;
+    }
+
+    .categorie {
+        grid-area: 1/1/2/2;
+    }
+
+    .bereiding {
+        grid-area: 1/2/2/3;
+    }
+	
+    .cardContainer {
+        display: flex;
+        row-gap: 2em;
+        column-gap: 1em;
+        flex-wrap: wrap;
+    }
+
+    .cardContainer article {
+        margin: 0;
+    }
+
+    .recepten hr.line, .shop hr.line {
+        display: block;
+    }
+
+    /* === Recept === */
+    .heroRecept1 h2, .heroRecept2 h2, .heroRecept3 h2, .heroRecept4 h2, .heroRecept5 h2, .heroRecept6 h2, .heroRecept7 h2, .heroRecept8 h2, .heroRecept9 h2, .heroRecept10 h2, .heroKoe h2, .heroSushi h2, .heroOver h2 {
+        font-size: 1.8em;
+    }
+
+    .gerecht {
+        display: grid;
+        grid-template-columns: 2.4fr 1fr;
+        grid-template-rows: auto 1fr;
+        column-gap: 1em;
+    }
+
+    .gerecht .bereidingswijze {
+        grid-row: 1/-1;
+        grid-column: 1/2;
+        margin-right: 1.6em;
+    }
+
+    .gerecht h3 {
+        font-size: 1.2em;
+        padding: 0;
+    }
+
+    .gerecht .rcpName {
+        display: flex;
+        flex-direction: column;
+        grid-area: 1/2/2/3;
+    }
+    .time {
+        padding: 0.2em 1.2em 0 0.6em;
+    }
+
+    .ingredienten {
+        grid-area: 2/2/-1/-1;
+        grid-row: 2/-1;
+        margin: 2.7em 0 1em 0;   
+    }
+
+    .gerecht .rcpName ul.foodIcons {
+        order: 1;
+        align-self: flex-start;
+    }
+    
+    .gerecht .rcpName .time {
+        order: 2;
+        align-self: flex-start;
+        padding: 0.4em 0 0 10.2em ;
+    }
+
+    .gerecht .rcpName h3 {
+        order: 3;
+    }
+
+    .gerecht .rcpName ul.foodIcons li {
+        width:3em;
+        padding: 0 0.6em 0 0;
+    }
+
+    .gerecht h3 {
+        font-size: 1.2em;
+    }
+
+    /* === Nieuws === */
+    .nieuws .cardNws {
+        margin-bottom: 0;
+        height: 100%;
+    }
+
+    .nieuws h2 {
+        margin: 2.8em auto 0.6em 0;
+    }
+
+    main.nieuws div.container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 0.8em;   
+    }
+
+    .cardNws #ln1 {
+        background-size: 155%;
+        height: 42vw;
+    }
+
+    #ln1, #ln2, #ln3, #ln4, #ln5, #ln6 {
+        height: 42vw;
+    }
+
+    .cardNws h3 {
+        margin: 0.7em 0.8em 0.4em 0.8em;
+    }
+
+    /* koe */
+    #animation_container {
+        margin: -25em auto 0 auto;
+    }
+    section.koe {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 1.2em;
+    }
+
+    #koe h3 {
+        grid-area: 1/1/2/3;
+        font-size: 1.5em;
+    }
+
+    .ontdekText1 {
+        margin: 2em 2em;
+    }
+
+    .ontdekText2 {
+        grid-area: 3/1/4/-1;
+    }
+
+    .dynamicPopup {
+        transform: translate(-50%, -25%);
+    }
+    
+    .show button {
+        width: 9em;;
+    }
+
+    /* === sushi === */
+    section.heroSushi {
+        background-position: 50% 80%;
+    }
+
+    section.sushi {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        column-gap: 2em;  
+    }
+    
+    #sushi h2 {
+        grid-area: 1/1/2/3;
+        font-size: 1.5em;
+        margin-top: 0.4em;
+    }
+
+    .sushirijst h3:first-child {
+        font-size: 1.2em;
+    }
+
+    #sushi .videoSushi {
+        grid-area: 2/1/3/2;
+    }
+
+    #sushi div:nth-of-type(2) {
+        grid-area: 2/2/3/3;
+        margin-top: 1em;
+    }
+
+    .sushirijst {
+        grid-row: 3/4;
+        grid-column: 1/3;
+    }
+
+    .maki {
+        grid-area: 4/1/5/3;
+    }
+
+    #videoSushi {
+        width: 100%;
+        height: 30vw;
+        object-fit: cover;
+        margin: auto 0;
+    }
+
+    /* === over ons === */
+    main.over {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto auto;
+        column-gap: 2em;
+    }
+
+    .over h2 {
+        grid-column: 1/3;
+    }
+
+    .over p:first-of-type, .over p:nth-of-type(2), .over p:nth-of-type(4), .over p:nth-of-type(5) {
+        grid-column: 1/3;
+    }
+
+    .overImg {
+        margin: 0.2em 0 0.8em 0;
+    }
+
+    /* === contact === */
+    main.contact legend {
+        padding-top: 3em;     
+    }
+
+    main.contact form div:last-child {
+        margin: 5em auto 3em auto;
+    }
+
+    /* === shop === */
+    main.shop h2 {
+        display: block;
+    }
+    a.cardUitgelicht:last-of-type {
+        display: none;
+    }
+
+    #uitgelicht .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        column-gap: 1.2em;
+    }
+
+    #uitgelicht hr {
+        grid-area: 1/1/2/3;
+    }
+
+    article #uit1 {
+        grid-area: 2/1/3/2;
+    }
+
+    .imgBoek {
+        height: 37vw;
+    }
+
+    .uitgelicht span .button {
+        width: calc(50% - 3.2em)
+    }
+
+    .menus {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    /* --- dropdown menu's --- */
+    .dropdown {
+        width: 100%;
+    }
+
+    .dropdown label {
+        border-top: 1px solid #418d957d;
+        border-bottom: 1px solid #418d957d;
+        text-align: center;
+    }
+
+    #drpdKeuk {
+        order: 3;
+    }
+
+    .dropdown .menu {
+        background-color: #ffffffd0;
+    }
+
+    #drpdCat .menu a, #drpdKeuk .menu a {
+        width: 300px;
+    }
+
+    .shop div.rangeContainer {
+        border-top: 1px solid #418d957d;
+        order: 2;
+        justify-content: center;
+        padding: 0;
+    }
+
+    div.boekthumbs {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 1.4em;
+    }
+
+    section.anderen div.boekthumbs {
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .boekthumbs article:nth-child(n+7):nth-child(-n+9) {
+        display: block;
+    }
+
+    .imgFront {
+        height: 60%;
+    }
+
+    /* === boek === */
+    .shopBoek .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto 2.4em 5.3em;
+    }
+
+    .shopBoek .container .line {
+        grid-area: 1/1/2/3;
+    }
+
+    .imgPrijs {
+        grid-template-rows: 2.8fr 1fr;
+        grid-area: 2/1/-1/2;
+    }
+
+    .shopBoek .container .thumbnails {
+        gap: 2.4vw;
+    }
+
+    .shopBoek .container .thumbnails img {
+        width: 6.5vw;
+    }
+
+    .shopBoek.container .textBoek {
+        grid-area: 2/2/3/3;
+    }
+
+    .textBoek P {
+        font-size: 1em;
+    }
+
+    .shopBoek .container .cat {
+        grid-area: 3/2/4/3;
+    }
+
+    .shopBoek .container a.button {
+        grid-area: 4/2/5/3;
+        max-width: none;
+    }
+
+    .dynamicBoekInhoud span.button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 4.2em;
+    }
+    
+    .reviews {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        column-gap: 1em;
+    }
+
+    .reviews h2 {
+        grid-area: 1/1/2/3;
+    }
+
+    .reviews .review:not(:nth-child(-n+3)) {
+        display: none;
+    }
+
+    .punten ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 6.4em; /* Hoogte van de lijst */
+    }
+    div.review {
+        margin-bottom: 0;
+    }
+
+    .punten li {
+        font-size: 0.8em;
+    }
+
+    .stars4 {
+        background-size: 250%;
+        width: 16vw;
+    }
+
+    .stars4half {
+        background-size: 200%;
+        width: 20vw;
+    }
+
+    .stars5 {
+        background-size: 200%;
+        width: 20vw;
+    }
+
+    section.anderen .boekthumb article:not(:nth-child(-n+6)) {
+        display: none;
+    }
+
+    /* === Winkelwagen === */
+    main.winkelwagen {
+        margin-top: 4.4em;
+    }
+    .product {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 2em;
+        margin-top: 3em;
+        padding-top: 1em;
+    }
+
+    .product img.imgProduct{
+        grid-row: 1/3;
+    }
+
+    .product .tekstBoekWagen {
+        grid-area: 1/2/3/3;
+    }
+
+    .product .boekprijs {
+        grid-area: 1/3/2/4;
+        text-align: right;
+    }
+    .product .aantalProduct {
+        grid-area: 2/3/3/4;
+        justify-content: flex-end
+    }  
+
+    .product .tekstBoekWagen ul li:nth-child(-n+2) {
+        font-size: 1.3em;
+    }
+
+    .product .tekstBoekWagen ul li:nth-child(n+3) {
+        font-size: 1em;
+    }
+    .product .aantalProduct label {
+        font-size: 1.1em;
+    }
+
+    .product input.veld {
+        align-self: center;
+    }
+
+    /* === Account === */
+    main.account {
+        padding: 0;
+    }
+    .accountMenus .menuVast {
+        display: block;
+    }
+    .accountMenus .dropdown {
+        display: none;
+    }
+    .menuVast ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style: none;
+        text-transform: uppercase;
+        font-size: 1em;
+        font-weight: 600;
+        padding: 1em 0.4em;
+        border-top: 1px solid #418d957d;
+        border-bottom: 1px solid #418d957d;
+    }
+
+    fieldset.persoonlijk {
+        display: grid;
+        grid-template-rows: repeat(8, auto);
+        grid-template-columns: 7fr 1fr 3fr 7fr;
+        column-gap: 1em;
+    }
+    fieldset .legend {
+        grid-area: 1/1/2/7;
+    }
+    fieldset .aanhef {
+        grid-area: 2/1/3/3;
+    }
+    fieldset .voornaam {
+        grid-area: 3/1/4/2;
+    }
+    fieldset .tussen {
+        grid-area: 3/2/4/4;
+    }
+    fieldset .achternaam {
+        grid-area: 3/4/4/5;
+    }
+    fieldset .bedrijf {
+        grid-area: 4/1/5/2;
+    }
+    fieldset .geboorte {
+        grid-area: 5/1/6/2;
+    }
+    fieldset .straat {
+        grid-area: 6/1/7/2;
+    }
+    fieldset .huisnr {
+        grid-area: 6/2/7/4;
+    }
+    fieldset .postcode {
+        grid-area: 6/4/7/5;
+    }
+    fieldset .landRadios {
+        grid-area: 7/1/8/2;
+        margin-top: 1em;
+    }
+    fieldset .landAnders {
+        grid-area: 7/2/8/5;
+        margin-top: 1em;
+    }
+    fieldset .telefoon {
+        grid-area: 8/1/9/3;
+    }
+
+    fieldset .telefoon, fieldset .email, fieldset .bevestigen, fieldset .wachtwoord, fieldset .wwButton {
+        width: 100%;
+    }
+    
+    fieldset.inloggen {
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        grid-template-columns: 2.1fr 2.1fr 1fr ;
+        column-gap: 1em;
+    }
+    fieldset .legend {
+        grid-area: 1/1/2/4;
+    }
+    fieldset .email {
+        grid-area: 2/1/3/2;
+    }
+    fieldset .bevestigen {
+        grid-area: 2/2/3/3;
+    }
+    fieldset .wachtwoord {
+        grid-area: 3/1/4/2;
+    }
+    fieldset .wwButton {
+        grid-area: 3/2/4/3;
+        margin: 1.5em 0 1.85em 0;
+    }
+    input#ww_wijzigen {
+        font-size: 1.1em;
+    }
+    
+}
+
+/* ======================================================= */
+/* ==================== Desktop Styles =================== */
+/* ======================================================= */
+@media screen and (min-width:1280px) {
+    #showMenu{
+        display:none;
+    }
+
+    nav {
+        height: 100px;
+        display: grid;
+        grid-template-rows: 100px 1fr;
+        grid-template-columns: 1fr 7.5fr 1fr;
+    }
+    nav ul {
+        align-items: center;
+        height: 100px;
+        grid-column: 2/3;
+    }
+
+    nav ul.list {
+        height: 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1.5fr 1fr 1fr 1fr;
+        color: #FFF;
+        width: 100%;
+        text-align: center;  
+        background-color: transparent;
+        padding: 0 10em;
+        align-items: center;
+    }
+
+    nav ul.list li:nth-child(5) {
+        grid-column: 5/6;
+    }
+
+    /* borders links en rechts */
+    nav ul.list li {
+        height: 100px;
+        border-bottom: none;
+        border-right: 1px solid #000;
+        padding-top: 2.2em;
+        transition: 400ms;
+        position: relative;   
+    }
+
+    nav ul.list li::before {
+        content: "";
+        position: absolute;
+        right: -2px;
+        top: 0;
+        height: 100%;
+        width: 1px;
+        background-color: #606060; 
+    }
+
+    nav ul.list li:nth-child(2),
+    nav ul.list li:nth-child(5) {
+        border-left: 1px solid #606060;
+        border-right: 1px solid #000;
+    }
+
+    nav ul.list li:nth-child(2)::after, 
+    nav ul.list li:nth-child(5)::after {
+        content: "";
+        position: absolute;
+        left: -2px;
+        top: 0;
+        height: 100%;
+        width: 1px;
+        background-color: #000; 
+    }
+
+    nav ul.list li:hover {
+        background-color: #418c9f;
+        border-bottom: 0.31em solid #d98a3f;
+        transition: 0.5s;
+    }
+
+    nav ul.list li.active {
+        border-bottom: 0.31em solid #d98a3f;
+    }
+
+    /* verbergt menu winkelwagen en home in nav */
+    nav ul li:nth-child(7), 
+    nav ul li:first-child {
+        display: none;
+    }
+
+    /* om icons te possitioneren */
+    .accountIcons{
+        right: 1em;
+        top: 0;
+        grid-column: 3/4;
+        width: 80%;
+    } 
+
+    #showMenu:checked + ul li:hover {
+        color: #d98a3f;
+    }
+
+    .heroCampagne .logo, .logo {
+        margin: 0 auto;
+        width: 8.75em;
+        margin-top: -5.4em;
+        position: relative;
+        grid-area: 2/2/3/3;
+    }
+
+    .logo1:hover, .logo2:hover {
+        box-shadow: 0px 0px 10px rgba(0,0,0, 0.75);
+        transition-duration: 500ms;
+    }
+
+    section.heroHome {
+        background-size: 110%;
+        height: 49vw;
+        background-position: 0px, -500px;
+    } 
+
+    section.heroCampagne {
+        height: 60vw;
+        background-position: center top;
+        background-size: 100%;
+    }
+
+    section.heroRecept1, section.heroRecept2, section.heroRecept3, section.heroRecept4, section.heroRecept5, section.heroRecept6, section.heroRecept7, section.heroRecept8, section.heroRecept9, section.heroRecept10, section.heroKoe, section.heroSushi, section.heroOver {
+        height: 70vh;
+    }
+
+    .heroHome h2, .heroCampagne h2, .heroShop h2 {
+        margin-top: 25vh;
+        font-size: 2em;
+    }
+
+    .heroHome h3 {
+        margin-top: 0;
+        margin-bottom: 5vh;
+        font-size: 1.9em;
+    }
+
+    .pager {
+        width: 100%; 
+    }	
+
+    .pager span{
+        width: 1.6em; 
+        height: 1.6em;
+    }
+
+    .pager span.active {
+        width: 1.6em;
+        height: 1.6em;
+    }
+    
+    .pager span.active::before {
+        width: 1em;
+        height: 1em;
+    }
+
+    article:hover {
+        box-shadow: 2px 2px 6px rgba(0,0,0, 0.75);
+        transition-duration: 500ms; 
+    }
+
+    .container a.button {
+        margin: 3% 5em 1% auto;
+    }
+
+    .heroCampagne div.container a.button {
+        margin-top: 25vh;
+        margin-right: 5em;
+    }
+
+    #nieuwsteBoeken div.container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+    
+    .cardBoek {
+        width: 30vw;
+        height: 38vw;
+        margin: 0.2em;
+    }
+
+    .cardBoek:hover {
+        box-shadow: 0px 6px 8px rgba(0,0,0, 0.35);
+        transition-duration: 500ms;
+    }
+
+    .cardBoek h3 {
+        margin: 0 auto;
+        padding-top: 16vh;
+    }
+
+    .cardBoek h4 {
+        height: 3vh;
+    }
+
+    /* === campagne === */
+    #boekSellectie {
+        display: block;
+    }
+    #boekSellectie h3 {
+        margin-left: 0.8em;
+    }
+
+    #boekSellectie .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1em;
+    }
+    #boekSellectie .container p {
+        height: 10%;
+        margin: 0.2em 1em
+    }
+    #boekSellectie .container img {
+        width: calc(100% - 2em);
+        margin: 1em auto;
+    }
+    #campagne .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 1.6em;
+        margin-bottom: 3em;
+    }
+
+    #campagne .button {
+        grid-area: 3/1/4/2;
+        width: 22vw;
+        margin-right: 13vw;
+    }
+    
+    #campagne article.nigella {
+        grid-area: 1/1/2/2;
+        margin: 0;
+    }
+    #campagne article:hover {
+        box-shadow: none;
+    }
+
+    #campagne .heading2 {
+        grid-area: 2/1/3/2;
+        margin: 0;
+    }
+
+    #campagne .videoNigella {
+        grid-area: 1/2/4/3;
+        height: 45vw;
+        margin: auto 0;
+    }
+
+    #videoNigella {
+        height: 33vw;
+    }
+
+    #nb1 {
+        background-size: 120%;
+        background-position: -325x -385px;
+        margin: 0;
+        background-size: 200%;    
+    }
+
+    #nb2 {
+        background-size: 110%;
+        background-position: -16px 0px;
+        margin: 0 1.25em; 
+    }
+
+    #nb3 {
+        background-size: 230%;
+        background-position: -220px -400px;
+        margin: 0;
+    } 
+
+    .cardBoek .button {
+        margin-top: 18vh;
+        margin-bottom: 1.2em;
+        box-shadow: 0px 3px 6px rgba(0,0,0, 0.20);
+        transition-duration: 500ms;
+        width: 75%;
+    }
+
+    .cardBoek.button:hover {
+        box-shadow: 0px 6px 8px rgba(0,0,0, 0.35);
+    }
+    
+    #nb1 h3, #nb2 h3, #nb3 h3{
+        padding-top: 22vh; 
+    }
+
+    #nb1 h4, #nb2 h4, #nb3 h4 {
+        padding-bottom: 5vh;
+    }
+        
+    .button:hover {
+        box-shadow: 0px 6px 8px rgba(0,0,0, 0.35);
+        transition-duration: 500ms; 
+    }
+
+    /* === Laatste nieuws === */
+    #laatsteNieuws article.ln2 {
+        display: block;
+    }
+    
+    #laatsteNieuws div.container {
+        display: flex;
+        gap: 1em;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+
+    #laatsteNieuws #ln1.imgContainer {
+        background-size: 134%;
+        height: 37vw;
+    }
+    
+    #laatsteNieuws #ln2.imgContainer, #laatsteNieuws #ln3.imgContainer {
+        background-size: 220%;
+        background-position: -295px -390px;
+        height: 37vw;
+    }
+
+    #laatsteNieuws article span.button {
+        width: 50%;
+    }
+
+    #nieuwRecepten div.container {
+        display: flex;
+        gap: 1em;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+
+    section#nieuwRecepten article:nth-of-type(3) {
+        display: block;
+    }
+
+    #nigellaRecepten .container {
+        display: flex;
+        gap: 1em;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+
+    #nigellaRecepten .container article:nth-child(10) {
+        display: none;
+    }
+
+    #nieuwRecepten a.button {
+        margin: 1.5em auto;
+        width: calc(100% - 2em);
+        box-shadow: 0px 3px 6px rgba(0,0,0, 0.20);
+        transition-duration: 500ms;
+    }
+
+    #nieuwRecepten a.button:hover {
+        box-shadow: 0px 6px 8px rgba(0,0,0, 0.35);
+    }
+
+    #overOns .container {
+        display: grid;
+        grid-gap: 1.25em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        overflow: hidden;
+        margin-bottom: 1em;
+    }
+
+    #overOns p:first-of-type:nth-of-type(-n+5) {
+        margin: 0;
+        grid-column: 2/-1;
+        text-align: left;
+    }
+
+    .imgVintage {
+        grid-area: 2/1/8/2;
+        background-size: 160%;
+        height: 98.5%;
+        margin-bottom: 0.5em;
+    }
+
+    #overOns div.container a.button {
+        margin-top: 10em;
+        margin-left:0;
+        margin-bottom: 0.5em;
+        width: 60%;
+        box-shadow: 0px 3px 6px rgba(0,0,0, 0.20);
+    }
+
+    #overOns div.container a.button:hover {
+        box-shadow: 0px 6px 8px rgba(0,0,0, 0.35);
+        transition-duration: 500ms;
+    }
+   
+    #overNigella .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 1em;
+    }
+
+    #overNigella h3 {
+        padding: 0.4em 0;
+    }
+    
+    #overNigella p:first-of-type {
+        grid-column: 1/3;
+        margin-right: 1.8em;
+    }
+    
+    #overNigella img {
+        grid-area: 2/3/3/4;
+    }
+
+    #overNigella p.pboek {
+        grid-area: 2/4/3/5;
+        margin: 0 0 0 1em
+    }
+           
+    #overNigella p:nth-of-type(2) {
+        grid-area: 3/3/4/5;
+    }
+
+    section.heroRegister {
+        background-image: none;
+        height: 160px;
+    }
+
+    main.register {
+        display: flex;
+        flex-direction: row;
+        gap: 1.25em
+    }
+
+    main.register div.container {
+        width: 90%;
+    }
+
+    main.register div img {
+        width: 100%;
+        display: inline-block;
+        padding: 0.75em;
+    }
+
+    input.veld {
+        padding : 0.8em 2em;
+    }
+    
+    span.error {
+        margin: -2.2em 1em 1.2em 0;
+    }
+
+    /* === Recepten === */
+    .recepten h2 {
+        margin: 3em auto 0 20%;
+    }
+
+    .recepten hr.line {
+        grid-column: 1/4;
+
+    }
+    .categorie, .bereiding{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        margin: 2em 0;
+    }
+
+    .categorie img, .bereiding img {
+        width: 30px;
+    }
+
+    .categorie p {
+        margin-left: 1.2em;
+    }
+
+    .recepten .symbols {
+        display: flex;
+        flex-direction: column;
+        grid-area: 2/1/3/2;   
+        margin-top: 5em; 
+    }
+
+    .recepten .cardContainer {
+        grid-area: 2/2/4/3;
+    }
+
+    .personen {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 85%;
+    }
+    .personen img {
+        width: 4.2em;
+    }
+
+    .recepten .container {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 4fr 0.4fr;
+        grid-template-rows: auto 1fr 1fr;
+    }
+
+    .recepten .pagination {
+        margin: 2em auto 6em 10%;
+        grid-area: 2/2/4/3;
+    }
+
+    .cardRcp a.button {
+        margin: 0.8em auto ;
+    }
+
+   .recepten article.cardRcp:nth-of-type(n+5) {
+        display: none;
+    }
+
+    /* hero h2 */
+    .heroRecept1 h2, .heroRecept2 h2, .heroRecept3 h2, .heroRecept4 h2, .heroRecept5 h2, .heroRecept6 h2, .heroRecept7 h2, .heroRecept8 h2, .heroRecept9 h2, .heroRecept10 h2, .heroKoe h2, .heroSushi h2, .heroOver h2 {
+        font-size: 2em;
+        margin: 3em auto auto 2em;
+        position: relative;
+        max-width: 40%;
+    }
+
+    /* === Nieuws === */
+    main.nieuws div.container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        column-gap: 0.8em;  
+        row-gap: 4em; 
+    }
+
+    #ln1.imgContainer {
+        background-size: 135%;
+        height: 27vw;
+    }
+
+    #ln1, #ln2, #ln3, #ln4, #ln5, #ln6 {
+        height: 27vw;
+    }
+
+    .nieuws .pagination {
+        margin: 3em auto;
+    }
+
+    /* koe */
+    section.koe {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        column-gap: 2.5em;
+        margin: 0 1em;
+    }
+
+    .ontdekText1 {
+        grid-area: 2/1/3/2;
+        margin: 1em 0 0 0;
+    }
+
+    .ontdekImg {
+        grid-area: 3/1/4/2;;
+    }
+
+    .ontdekText2 {
+        grid-area: 2/2/-1/-1;
+        margin: 1em 0;
+    }
+
+    .dynamicPopup {
+        transform: translate(0, -25%);
+    }
+
+    /* === sushi === */
+    section.sushi {
+        grid-template-columns: 1fr 1fr 2fr;
+        grid-template-rows: auto auto auto;  
+    }
+
+    #sushi h2 {
+        grid-column: 1/-1;
+    }
+
+    #videoSushi {
+        height: 14vw;
+    }
+
+   .maki {
+        grid-column: 3/-1;
+        grid-row: 2/-1;
+    }
+
+    /* === over ons === */
+    main.over {
+        grid-template-columns: 1fr 1fr 2fr;
+        grid-template-rows: auto auto auto auto auto;
+    }
+
+    .over h2, .over p:first-of-type {
+        grid-column: 1/3;
+    }
+
+    .overImg {
+        grid-area: 3/1/5/2;
+    }
+
+    .over p:nth-of-type(2) {
+        grid-area: 3/2/5/3;
+    }
+
+    .over p:nth-of-type(3) {
+        grid-area: 2/3/3/4;
+        margin-top: 0;
+    }
+
+    .over p:nth-of-type(4) {
+        grid-area: 3/3/4/4;
+    }
+
+    .over p:nth-of-type(5) {
+        grid-area: 4/3/5/4;
+    }
+
+     /* === contact === */
+    main.contact legend {
+        top: 3em;
+        left: 2em;
+        position: absolute;     
+    }
+
+    main.contact fieldset {
+        padding-top: 6em;
+    }
+
+    main.contact form div:last-child {
+        margin: -4em 0 3em auto;
+        width: 240px;
+    }
+
+     /* === shop === */
+     a.cardUitgelicht:last-of-type {
+        display: block;
+    }
+    
+    #uitgelicht .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        column-gap: 1.2em;
+    }
+
+    #uitgelicht hr {
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+
+    .boekthumbs article:nth-child(n+10):nth-child(-n+12) {
+        display: block;
+    }
+
+    .imgFront {
+        height: 60%;
+    }
+
+    main.shop {
+        display: grid;
+        grid-template-columns: 1fr 3.6fr;
+        grid-template-rows: auto auto auto;
+        row-gap: 1.4em;
+        column-gap: 3em;
+    }
+
+    section#uitgelicht {
+        grid-column: 1/3;
+        grid-template-rows: 1/2; 
+        
+    }
+
+    div.boekthumbs {
+        grid-column: 2/3;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 1.2em;
+    }
+
+    .menus {
+        grid-area: 2/1/3/2;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;   
+    }
+
+    #uit1Img, #uit2Img, #uit3Img {
+        background-size: 90%;
+    }
+
+    /* --- dropdown menu's --- */
+    .dropdown label {
+        text-align: left;
+        width: 300px;
+    }
+     
+    .dropdown .menu {
+        display: block;
+        background-color: #FFF;
+    }
+
+    .shop div.rangeContainer{
+        margin: 19.5em 0 3.2em 0;
+        text-align: left;
+        justify-content: flex-start;
+        padding-left: 1em;
+        border: none;
+    }
+    
+    /* === boek	=== */
+    .boek hr.line, .textBoek h3 {
+        display: none;
+    }
+
+    section.shopBoek {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .shopBoek .container {
+        grid-template-columns: 1fr 1fr 2fr;
+        grid-template-rows: 1.2fr 0.7fr 0.2fr;
+    }
+
+    .textBoek p.verberg {
+        display: block;
+    }
+
+    .textBoek p {
+        font-size: 1.2em;
+    }
+
+    summary {
+        display: none;
+    }
+
+    div .textBoek {
+        grid-area: 1/1/2/3;
+        margin-top: 1.2em;
+    }
+
+    .shopBoek .container .cat {
+        grid-row: 2/4;
+        grid-column: 1/2; 
+    }
+
+    .shopBoek .container a.button {
+        grid-area: 3/2/4/3;
+    }
+    .container .imgPrijs {
+        grid-area: 1/3/4/-1;
+        grid-template-columns: 1fr 2.8fr;
+        grid-template-rows: auto auto;
+        width:50vw;
+    }
+    
+    .imgBoek {
+        grid-area: 1/2/2/-1;
+    }
+
+    .imgPrijs p.boekprijs {
+        grid-column: 1/2;
+        text-align: left;
+        margin: auto auto 1em 0.2em;
+    }
+
+    .cat ul {
+        text-align: left;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cat ul li {
+        border: none;
+        margin: 1.2em 1em;
+        font-size: 1.2em;
+
+    }
+    .cat ul li:last-child {
+        width: 100%;
+    }
+
+    .thumbnails {
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    .imgBoek img {
+        width: 82%;
+    }
+
+    main.boek {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto auto;
+        gap: 2em
+    }
+
+    section.shopBoek {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    section.reviews {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.anderen {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    section.anderen .boekthumb:not(:nth-child(-n+6)) {
+        display: block;
+    }
+
+    .stars4 {
+        width: 9.3vw;
+    }
+
+    .stars4half, .stars5 {
+        width: 12vw;
+    }
+ 
+    div.review {
+        margin-top: 1.2em;
+    }
+    .reviews .review:not(:nth-child(-n+3)) {
+        display: block;
+    }
+
+    .reviews .review:not(:nth-child(-n+5)) {
+        display: none;
+    }
+
+    main.boek div.pagination {
+        display: none;
+    }
+
+    /* === Winkelwagen === */
+    main.winkelwagen {
+        margin-top: 2.6em;
+    }
+    .product {
+        display: grid;
+        grid-template-columns: 1.4fr 2.4fr 1fr 1fr;
+        grid-template-rows: none;
+    }
+
+    .product img.imgProduct {
+        grid-column: 1/2;
+    }
+
+    .product .tekstBoekWagen {
+        grid-column: 2/3;
+    }
+
+    .product .boekprijs {
+        grid-area: 1/4/3/5;
+    }
+    .product .aantalProduct {
+        grid-area: 1/3/3/4;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    } 
+
+    .product .aantalProduct .verwijderen {
+        align-self: flex-start;
+        grid-row: 2/3;
+        grid-column: 1/3;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .product .aantalProduct span {
+        display: block;
+        align-self: flex-start;
+        font-weight: 600;
+        color: #418c9f;
+        text-transform: uppercase;
+        padding: 0.4em 0;
+    }
+
+    img.logoBin {
+        align-self: flex-start;
+        align-items:end;
+        padding-right: 0.3em;
+    }
+
+    .product .aantalProduct label, .product input.veld {
+        align-self: flex-end;
+    }
+    
+    .tekstBoekWagen ul {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        column-gap: 2em;
+    }
+
+    li.titel {
+        grid-area: 1/1/2/2;
+    }
+    li.auteur {
+        grid-area: 2/1/3/2;
+    }
+    li.isbn {
+        grid-area: 1/2/2/3;
+    }
+    li.bezorgd {
+        grid-area: 2/2/3/3;
+    }
+
+    table {
+        border-collapse: collapse; /* Verwijdert extra ruimte tussen cellen */
+        width: 25vw;
+    }
+
+    tr td:first-child {
+        text-align: right;
+        padding-right: 2em;
+        font-weight: 500;
+    }
+
+    tr td:nth-child(2) {
+        text-align: right;
+        padding-left: 2em;
+        font-size: 1.1em;
+        font-weight: 600;
+
+    }
+    tr.verzendkosten td {
+        border-bottom: 1px #000 solid;
+    }    
+    .winkelwagen .totaal {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr 1fr;
+        justify-items: end;
+    }
+
+    .totaal  {
+        display: block;
+    }
+    .totaal hr {
+        grid-area: 1/1/2/3;
+    }
+
+    .totaal .korting {
+        grid-area: 2/1/3/2;
+        margin-top: 2em;
+    }
+    .totaal .som {
+        grid-area: 2/2/3/2;
+        margin-top: 2em;
+    }
+
+    .som .button {
+        width: 100%;
+        max-width: none;
+        margin: 2em 0 1em 0;
+    }
+
+    .korting label {
+        text-transform: uppercase;
+        font-size: 1.1em;
+    }
+    .korting input {
+        width: 16em;
+        height: 2.4em;
+        border-radius: 5px;
+        border: 1px solid #000;
+    }
+
+    /* === account === */
+    .menuVast ul {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        border-bottom: none;
+    }
+    .menuVast ul li {
+        border-bottom: 1px solid #418d957d;
+        padding: 1em 0.4em;
+    }
+
+    main.account {
+        display: grid;
+        grid-template-rows: 6em 20em 30em;
+        grid-template-columns: 1fr 3fr;
+        column-gap: 2em;
+    }
+    .account h2 {
+        grid-area: 1/1/2/3;
+    }
+    .accountMenus {
+        grid-area: 2/1/4/2;
+        margin-top: 7.8em;
+    }
+    .account form {
+        grid-area: 2/2/-1/-1;
+    }
+
+}

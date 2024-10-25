@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/logos/favicon1.ico">
+    <title>Cuisine uitgevers-Food en recepten</title>
+</head>
+<body>
+    <header>
+        <section class="heroHome">
+            <div class="container">
+                <h1><span class="sr-only">Cuisine cookbooks and more</span></h1>
+                <nav>
+                    <!-- mobile menu -->
+                    <label for="showMenu" id="showMenuLabel"></label>
+                    <input type="checkbox" id="showMenu" role="button" aria-pressed="true">
+                    <ul class="list">
+                        <li class="active"><a href="index.html">home</a></li>
+                        <li><a href="pages/campagne/nigella.html">campagne</a></li>
+                        <li><a href="pages/recepten/recepten.html">recepten</a></li>
+                        <li><a href="pages/nieuws/nieuws.html">nieuws</a></li>
+                        <li><a href="pages/over_ons/over_ons.html">over ons</a></li>
+                        <li><a href="pages/contact/contact.html">contact</a></li>
+                        <li><a href="pages/shop/winkelwagen.html">winkelwagen</a></li>
+                        <li><a href="pages/shop/shop.html">shop</a></li>
+                    </ul>
+                    <div class="accountIcons">
+                        <a class="account" href="pages/shop/account.html">account</a>
+                        <span></span>
+                        <a class="winkelwagen" href="pages/shop/winkelwagen.html">winkelwagen</a>
+                    </div>
+                    <div class="logo" title="Home">
+                        <div class="logo1"><img src="img/logos/logo_zonder_tekst.svg" alt="logo"></div>
+                        <div class="logo2"><a href="index.html"><img src="img/logos/logo_tekst.svg" alt="logo" title="Home"></a></div>
+                    </div>
+                </nav>
+            </div>
+            <div class="container">
+                <h2>Leer de nieuwste recepten<br>en verwen jezelf en je gasten!</h2>
+                <div class="slider">
+                    <div class="prev"></div>
+                    <div class="blueLine"></div>
+                    <div class="next"></div>
+                </div>
+                <h3>Voor elke smaak is er<br>iets te vinden!</h3>
+                <a href="pages/recepten/recepten.html" class="button">nieuwste recepten</a>
+                <div class="pager" id="bullets">
+                    <span class="active"></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <!-- Nieuwste boeken -->
+        <section id="nieuwsteBoeken">
+            <h2>Nieuwste boeken</h2>
+            <div class="container">
+                <a href="pages/shop/boek.html
+                ">
+                    <div class="cardBoek" id="nb1">
+                        <div class="overlay"></div>
+                        <h3>"Relaxt, inspirerend en<br>om te watertanden."</h3>
+                        <div class="blueLine"></div>
+                        <h4>simply nigella</h4>
+                        <span class="button">simply nigella</span>
+                    </div>
+                </a>
+                <a href="/">
+                    <div class="cardBoek" id="nb2">
+                        <div class="overlay"></div>
+                        <h3>In Sweet keert Yotam Ottolenghi<br>terug naar waar het begon
+                        </h3>
+                        <div class="blueLine"></div>
+                        <h4>In de patisserie.</h4>
+                        <span class="button">sweet</span>
+                    </div>
+                </a>
+                <a href="/">
+                    <div class="cardBoek" id="nb3">
+                        <div class="overlay"></div>
+                        <h3>Super food voor elke dag<br>is het nieuwste kookboek</h3>
+                        <div class="blueLine"></div>
+                        <h4>van Jamie Oliver</h4>
+                        <span class="button">JAMIE&apos;S SUPERFOOD</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <!-- Laatste nieuws -->
+        <section id="laatsteNieuws">
+            <h2>Het laatste nieuws</h2>
+            <div class="container">
+                <a href="pages/nieuws/koe.html">
+                    <article class="ln1">
+                        <h3>Welk deel van de koe?</h3>
+                        <h4>Lees waar de steak, entrecote, ossenhaas en ribeye precies vandaan komen. Elk deel van de koe
+                            heeft zijn eigen malsheid en stevigheid. Ontdek welk stuk vlees de slager het liefst voor
+                            zichzelf houdt…</h4>
+                        <div class="imgContainer" id="ln1">
+                        </div>
+                        <span class="button">meer over de koe</span>
+                    </article>
+                </a>
+                <a href="pages/nieuws/sushi.html">
+                    <article class="ln2">
+                        <h3>Zelf sushi maken</h3>
+                        <h4>Zelf sushi maken is even een werkje en ook het koken van de sushirijst moet je niet
+                            onderschatten. Ook de Cuisine redactie gaat regelmatig thuis aan de slag met de vellen nori en
+                            schaaltjes sojasaus.</h4>
+                        <div class="imgContainer" id="ln2"></div>
+                        <span class="button">meer over sushi</span>
+                    </article>
+                </a>
+            </div>
+        </section>
+        <!-- Nieuwe recepten -->
+        <section id="nieuwRecepten" >
+            <h2>Nieuwe Recepten</h2>
+            <div class="container">
+                <article class="cardRcp" id="nrcp1">
+                    <a href="pages/recepten/recept_1.html">
+                        <div class="rcpName">
+                            <h3>Noedel soep</h3>
+                            <ul class="foodIcons">
+                                <li><img src="img/logos/pan.svg" alt="pan"></li>
+                                <li><img src="img/logos/vis.svg" alt="vis"></li>
+                                <li><img src="img/logos/tijd.svg" alt="tijd"></li>
+                            </ul>
+                            <div class="time"><span>25 min</span></div>
+                        </div>
+                        <ul class="ingredients">
+                            <li>100 gr sobanoedels </li>
+                            <li>100 gr garnalen</li>
+                            <li>1 bosje Lente ui</li>
+                            <li>4 el gehakte koriander</li>
+                            <li>1/2 tl chilivlokken</li>
+                        </ul>
+                        <img class="rcp" src="img/recepten/noedelsoep.jpg" alt="noedel soep">
+                        <span class="button">noedel soep maken</span>
+                    </a>
+                </article>
+                <article class="cardRcp" id="nrcp2">
+                    <a href="pages/recepten/recept_2.html">
+                        <div class="rcpName">
+                            <h3>Ragù Bolognese</h3>
+                            <ul class="foodIcons list">
+                                <li><img src="img/logos/pan.svg" alt="pan"></li>
+                                <li><img src="img/logos/vlees.svg" alt="mais"></li>
+                                <li><img src="img/logos/tijd.svg" alt="tijd"></li>
+                            </ul>
+                            <div class="time"><span>30 min</span></div>
+                        </div>
+                        <ul class="ingredients">
+                            <li>300 gr tagliatelle</li>
+                            <li>50 gr pancetta</li>
+                            <li>300 gr gehakt</li>
+                            <li>150 ml gezeefde tomaten</li>
+                            <li>150 ml rode wijn</li>
+                        </ul>
+                        <img class="rcp" src="img/recepten/ragu.jpg" alt="tagliatelle">
+                        <span class="button">tagliatelle maken</span>
+                    </a>
+                </article>
+                <article class="cardRcp" id="nrcp3">
+                    <a href="pages/recepten/recept_3.html">
+                        <div class="rcpName">
+                            <h3>Thaise kip</h3>
+                            <ul class="foodIcons list">
+                                <li><img src="img/logos/pan.svg" alt="pan"></li>
+                                <li><img src="img/logos/gevogelte.svg" alt="gevogelte"></li>
+                                <li><img src="img/logos/tijd.svg" alt="tijd"></li>
+                            </ul>
+                            <div class="time"><span>30 min</span></div>
+                        </div>
+                        <ul class="ingredients">
+                            <li>400 gr kipfilet</li>
+                            <li>1 groene paprika</li>
+                            <li>4 lente uien</li>
+                            <li>200 gr cashewnoten</li>
+                            <li>1 grote ui</li>
+                        </ul>
+                        <img class="rcp" src="img/recepten/thai_chicken.jpg" alt="thaise kip">
+                        <span class="button">thaise kip maken</span>
+                    </a>
+                </article>               
+            </div>
+        </section>
+        <section id="overOns">
+            <div class="container">
+                <h2>over cuisine</h2>
+                <p>Cuisine geeft al kookboeken uit sinds 1977. In de webwinkel zijn kookboeken te vinden in alle categorieën en uit alle delen van de wereld, in verschillende talen.</p>
+                <div class="imgVintage"></div>
+                <p>Boeken die niet in de winkel op voorraad zijn kunnen, mits leverbaar, overal ter wereld worden besteld. Er worden rechtstreeks boeken geïmporteerd uit landen als Egypte, Iran en India. Wekelijks komen, behalve uit Nederland, nieuwe boeken binnen uit Engeland, Amerika en Frankrijk.</p>
+                <p>Cuisine bied alles om uw kookervaring zo prettig mogelijk te maken.</p>
+                <p>Eet smakelijk!</p>
+                <p>Het Cuisine Team.</p>
+                <a href="pages/over_ons/over_ons.html" class="button">LEES VERDER OVER CUISINE</a>
+            </div>
+        </section>
+    </main>
+    <!-- start footer -->
+    <footer>
+        <div class="footerIcons">
+            <div>
+                <a href="/"><img src="img/logos/logo_complete.svg" alt="logo"></a>
+            </div>
+            <div>
+                <ul id=footerSocMed>
+                    <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class=lowerHalf>
+            <div class=footerNav>
+                <ul>
+                    <li><a href="pages/campagne/nigella.html">campagne</a></li>
+                    <li><a href="pages/recepten/recepten.html">recepten</a></li>
+                    <li><a href="pages/nieuws/nieuws.html">nieuws</a></li>
+                    <li><a href="pages/over_ons/over_ons.html">over Cuisine</a></li>
+                    <li><a href="pages/contact/contact.html">contact</a></li>
+                    <li><a href="pages/shop/shop.html">shop</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <address>
+                    <ul class="footerContactUs">
+                        <li>Cuisine B.V.</li>
+                        <li>Egelenburg 150-152</li>
+                        <li>1081 GK | Amsterdam</li>
+                    </ul>
+                </address>
+            </div>
+        </div>
+        <p>Cuisine B.V. &copy;2024</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
