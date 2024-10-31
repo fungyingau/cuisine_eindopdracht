@@ -272,9 +272,9 @@ nav ul li a {
     top: 9px;
     left: 0.5em;
     font-size: 2em;
-    appearance: none;
-    -webkit-appearance: none;
     -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
     cursor:pointer;
 }
 

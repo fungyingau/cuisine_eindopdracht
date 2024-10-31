@@ -28,7 +28,7 @@ window.addEventListener('load',function(e){
           .map(scale)
           .join(',')
       }
-
+// test
       var scalingFactor = {
         width: image.width / image.naturalWidth,
         height: image.height / image.naturalHeight,

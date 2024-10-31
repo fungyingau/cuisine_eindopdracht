@@ -353,7 +353,7 @@ function initDelen() {
 
 
 // ====== Carrousel ======
-const homeBackgrounds = ['url("../img/hero/hero_home1.jpg")', 'url("../img/hero/hero_home2.jpg")', 'url("../img/hero/hero_home3.jpg")'];
+const homeBackgrounds = ['url("img/hero/hero_home1.jpg")', 'url("img/hero/hero_home2.jpg")', 'url("img/hero/hero_home3.jpg")'];
 const heroHome = d.querySelector('section.heroHome');
 
 const shopBackgrounds = ['url("../../img/hero/hero_shop1.jpg")', 'url("../../img/hero/hero_shop2.jpg")', 'url("../../img/hero/hero_shop3.jpg")'];
@@ -520,7 +520,7 @@ function initBoeken() {
 
         // Update de inhoud van het boek
         boekjeTitel.textContent = boek.titel + ' - ' + boek.auteur;
-        dynamicFrontImg.src = '../../../img/boek/' + boek.coverImage;
+        dynamicFrontImg.src = '../../img/boek/' + boek.coverImage;
         dynamicFrontImg.alt = boek.titel;
         dynamicBoekjeButton.textContent = boek.titel;
         samenvatting.innerHTML = boek.synopsis;
@@ -575,7 +575,7 @@ function initRecepten() {
         const iconBereiding = d.createElement('li');
         iconBereiding.setAttribute('class', 'iconBereiding');
         const imgBereiding = d.createElement('img');
-        imgBereiding.src = '../../../img/logos/' + recept.bereiding + '.svg';
+        imgBereiding.src = '../../img/logos/' + recept.bereiding + '.svg';
         imgBereiding.alt = recept.bereiding;
         iconBereiding.appendChild(imgBereiding);
 
@@ -583,7 +583,7 @@ function initRecepten() {
         const iconCategorie = d.createElement('li');
         iconCategorie.setAttribute('class', 'iconCategorie');
         const imgCategorie = d.createElement('img');
-        imgCategorie.src = '../../../img/logos/' + recept.categorie + '.svg';
+        imgCategorie.src = '../../img/logos/' + recept.categorie + '.svg';
         imgCategorie.alt = recept.categorie;
         iconCategorie.appendChild(imgCategorie);
 
@@ -591,7 +591,7 @@ function initRecepten() {
         const iconTijd = d.createElement('li');
         iconTijd.setAttribute('class', 'iconTijd');
         const imgTijd = d.createElement('img');
-        imgTijd.src = '../../../img/logos/tijd.svg';
+        imgTijd.src = '../../img/logos/tijd.svg';
         imgTijd.alt = 'tijd';
         iconTijd.appendChild(imgTijd);
 
@@ -622,7 +622,7 @@ function initRecepten() {
         // Maak het element <img> aan en ken een class toe
         const gerechtImg = d.createElement('img');
         gerechtImg.setAttribute('class', 'rcp');
-        gerechtImg.src = '../../../img/recepten/' + recept.image;
+        gerechtImg.src = '../../img/recepten/' + recept.image;
         gerechtImg.alt = recept.gerechtNaam;
 
         // Maak het element <span> aan en ken een class toe
@@ -686,7 +686,7 @@ function initGerecht() {
         const heroClass = `section.heroRecept${paginanummer}`;
         const heroSection = d.querySelector(heroClass);
         if (heroSection) {
-            heroSection.style.backgroundImage = `url('../../../img/hero/hero_${gerecht.image}')`;
+            heroSection.style.backgroundImage = `url('../../img/hero/hero_${gerecht.image}')`;
             console.log(`Hero img section class is: ${heroClass}`);
         } else {
             console.error(`Hero section class ${heroClass} not found!`);
@@ -726,21 +726,21 @@ function initGerecht() {
         // Maak het element <li> aan voor iconBereiding
         const iconBereiding = d.createElement('li');
         const imgBereiding = d.createElement('img');
-        imgBereiding.src = '../../../img/logos/' + gerecht.bereiding + '.svg';
+        imgBereiding.src = '../../img/logos/' + gerecht.bereiding + '.svg';
         imgBereiding.alt = gerecht.bereiding;
         iconBereiding.appendChild(imgBereiding);
 
         // Maak het element <li> aan voor iconCategorie
         const iconCategorie = d.createElement('li');
         const imgCategorie = d.createElement('img');
-        imgCategorie.src = '../../../img/logos/' + gerecht.categorie + '.svg';
+        imgCategorie.src = '../../img/logos/' + gerecht.categorie + '.svg';
         imgCategorie.alt = gerecht.categorie;
         iconCategorie.appendChild(imgCategorie);
 
         // Maak het element <li> aan voor iconTijd
         const iconTijd = d.createElement('li');
         const imgTijd = d.createElement('img');
-        imgTijd.src = '../../../img/logos/tijd.svg';
+        imgTijd.src = '../../img/logos/tijd.svg';
         imgTijd.alt = 'tijd';
         iconTijd.appendChild(imgTijd);
 
