@@ -287,7 +287,7 @@ nav ul li a {
 
 /* hamburgermenu na het uitklappen menu */
 #showMenu:checked::after {
-    content: "\2715"; /* Unicode voor het kruis */
+    content: "\2A2F"; /* Unicode voor het kruis */
     color: #fff;
 }
 
