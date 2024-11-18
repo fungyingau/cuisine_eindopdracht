@@ -232,7 +232,7 @@ nav {
     background-color: rgba(0,0,0, 0.75);
     height:62px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 10vh 1fr;
+    grid-template-rows: 62px 1fr;
     row-gap: 1em;
 }
 
@@ -325,8 +325,8 @@ nav ul li a {
     display: flex;
     justify-content: flex-end;
     background-color: rgba(0, 0, 0, 0);
-    right: 2em;
-    top: 5px;
+    right: 0.5em;
+    margin: 0 auto;
 }
 
 .accountIcons a {
